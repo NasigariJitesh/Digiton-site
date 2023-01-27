@@ -1,0 +1,64 @@
+{
+  "teams": [
+    {
+      "_id": "6236fccde5bea9fc68279eab",
+      "name": "Muriel Fletcher",
+      "designation": "Frontend Developer",
+      "profile_photo": "team-1.jpg"
+    },
+    {
+      "_id": "6236fccd39d5016c28caea32",
+      "name": "Montgomery Rosa",
+      "designation": "Frontend Developer",
+      "profile_photo": "team-2.jpg"
+    },
+    {
+      "_id": "6236fccd623f723650795390",
+      "name": "Stella Wiggins",
+      "designation": "Frontend Developer",
+      "profile_photo": "team-3.jpg"
+    },
+    {
+      "_id": "6236fccd025d3376277aa822",
+      "name": "Rosales Miller",
+      "designation": "Frontend Developer",
+      "profile_photo": "team-4.jpg"
+    },
+    {
+      "_id": "6236fccdd9d08c919d399c17",
+      "name": "Obrien Dorsey",
+      "designation": "Frontend Developer",
+      "profile_photo": ""
+    },
+    {
+      "_id": "6236fccd6733d2d914fd3a3a",
+      "name": "Laverne Branch",
+      "designation": "Frontend Developer",
+      "profile_photo": ""
+    },
+    {
+      "_id": "6236fccd7fa5f43875709fa3",
+      "name": "Melinda Berg",
+      "designation": "Frontend Developer",
+      "profile_photo": ""
+    },
+    {
+      "_id": "6236fccd41b7f6f1b0d743f6",
+      "name": "Hodge Crawford",
+      "designation": "Frontend Developer",
+      "profile_photo": ""
+    },
+    {
+      "_id": "6236fccdc40150fb38c25b93",
+      "name": "Lilly Atkins",
+      "designation": "Frontend Developer",
+      "profile_photo": ""
+    },
+    {
+      "_id": "6236fccd4a7a4c78f684288d",
+      "name": "Williamson Perry",
+      "designation": "Frontend Developer",
+      "profile_photo": ""
+    }
+  ]
+}

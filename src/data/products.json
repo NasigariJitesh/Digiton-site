@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "review": 4,
+      "price": "$580",
+      "picture": "product-1.jpg",
+      "quantity": 2,
+      "tag": "",
+      "title": "dolor sit reprehenderit"
+    },
+    {
+      "id": 1,
+      "review": 1,
+      "price": "$124",
+      "picture": "product-2.jpg",
+      "quantity": 0,
+      "tag": "Sale",
+      "title": "amet id ex"
+    },
+    {
+      "id": 2,
+      "review": 3,
+      "price": "$927",
+      "picture": "product-3.jpg",
+      "quantity": 2,
+      "tag": "",
+      "title": "amet consectetur occaecat"
+    },
+    {
+      "id": 3,
+      "review": 5,
+      "price": "$260",
+      "picture": "product-4.jpg",
+      "quantity": 2,
+      "tag": "Sale",
+      "title": "enim sit magna"
+    },
+    {
+      "id": 4,
+      "review": 2,
+      "price": "$869",
+      "picture": "product-5.jpg",
+      "quantity": 2,
+      "tag": "Hot",
+      "title": "culpa et adipisicing"
+    },
+    {
+      "id": 5,
+      "review": 4,
+      "price": "$291",
+      "picture": "product-6.jpg",
+      "quantity": 0,
+      "tag": "Sale",
+      "title": "labore est officia"
+    },
+    {
+      "id": 6,
+      "review": 4,
+      "price": "$250",
+      "picture": "product-7.jpg",
+      "quantity": 2,
+      "tag": "Hot",
+      "title": "aliquip nisi labore"
+    },
+    {
+      "id": 7,
+      "review": 5,
+      "price": "$395",
+      "picture": "product-8.jpg",
+      "quantity": 3,
+      "tag": "Hot",
+      "title": "non officia nisi"
+    },
+    {
+      "id": 8,
+      "review": 2,
+      "price": "$485",
+      "picture": "product-9.jpg",
+      "quantity": 2,
+      "tag": "Hot",
+      "title": "do adipisicing occaecat"
+    }
+  ]
+}
