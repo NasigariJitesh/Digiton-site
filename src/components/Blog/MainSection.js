@@ -30,7 +30,7 @@ export default function MainSection() {
 											<a href='#'>25 Jan 2022</a>
 										</li>
 									</ul>
-									<div className='social-style-one'>
+									<div className='social-style-a'>
 										<span>Share Now</span>
 										<a href='http://facebook.com'>
 											<i className='fab fa-facebook-f'></i>
@@ -88,7 +88,7 @@ export default function MainSection() {
 											<a href='#'>25 Jan 2022</a>
 										</li>
 									</ul>
-									<div className='social-style-one'>
+									<div className='social-style-a'>
 										<span>Share Now</span>
 										<a href='http://facebook.com'>
 											<i className='fab fa-facebook-f'></i>
@@ -140,7 +140,7 @@ export default function MainSection() {
 											<a href='#'>25 Jan 2022</a>
 										</li>
 									</ul>
-									<div className='social-style-one'>
+									<div className='social-style-a'>
 										<span>Share Now</span>
 										<a href='http://facebook.com'>
 											<i className='fab fa-facebook-f'></i>
@@ -193,7 +193,7 @@ export default function MainSection() {
 											<a href='#'>25 Jan 2022</a>
 										</li>
 									</ul>
-									<div className='social-style-one'>
+									<div className='social-style-a'>
 										<span>Share Now</span>
 										<a href='http://facebook.com'>
 											<i className='fab fa-facebook-f'></i>
@@ -332,7 +332,7 @@ export default function MainSection() {
 							</div>
 							<div className='widget widget-category wow fadeInUp delay-0-2s'>
 								<h3 className='widget-title'>Category</h3>
-								<ul className='list-style-two'>
+								<ul className='list-style-b'>
 									<li>
 										<a href='#'>Business Strategy</a> <span>(20)</span>
 									</li>
@@ -374,9 +374,7 @@ export default function MainSection() {
 										Bur wemust ipsum dolor sit amet consectetur adipisicing elit
 										sed eiusmod tempor incididunt ut labore
 									</p>
-									<a
-										className='theme-btn style-five btn-circle'
-										href='/contact'>
+									<a className='theme-btn style-b btn-circle' href='/contact'>
 										Contact Now <i className='fas fa-angle-double-right'></i>
 									</a>
 								</div>

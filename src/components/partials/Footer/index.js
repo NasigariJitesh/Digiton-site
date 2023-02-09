@@ -5,14 +5,14 @@ import logo from '../../../assets/images/logos/logo-two.png';
 export default function FooterHomeFour() {
 	return (
 		<footer
-			className='main-footer footer-four bgs-cover bg-lighter'
+			className='main-footer footer-style bgs-cover bg-lighter'
 			style={{ backgroundImage: `url(${background})` }}>
 			<div className='footer-sign-up'>
 				<div className='container'>
-					<div className='footer-signup-inner bg-light-black pt-40 pb-25 px-60'>
+					<div className='footer-signup-inner bg-yellow pt-40 pb-25 px-60'>
 						<div className='row align-items-center justify-content-between'>
 							<div className='col-xl-6 col-lg-7'>
-								<div className='section-title text-white mb-25 rmb-35'>
+								<div className='section-title text-black mb-25 rmb-35'>
 									<h2>Sign up for latest IT resources news from Restly</h2>
 								</div>
 							</div>
@@ -42,7 +42,7 @@ export default function FooterHomeFour() {
 								Sed ut perspiciatis unde omnis natus evoluptat emaccu santium
 								doloremque laudantium totam rem aperiam eaquepsa
 							</div>
-							<div className='social-style-two mt-30'>
+							<div className='social-style-b mt-30'>
 								<a href='http://facebook.com'>
 									<i className='fab fa-facebook-f'></i>
 								</a>
@@ -61,7 +61,7 @@ export default function FooterHomeFour() {
 					<div className='col-lg-3 col-sm-6'>
 						<div className='footer-widget link-widget ml-20 rml-0'>
 							<h4 className='footer-title'>Page Links</h4>
-							<ul className='list-style-three'>
+							<ul className='list-style-c'>
 								<li>
 									<a href='#'>About Us</a>
 								</li>
@@ -83,7 +83,7 @@ export default function FooterHomeFour() {
 					<div className='col-lg-3 col-sm-6'>
 						<div className='footer-widget contact-widget mr-30 rmr-0'>
 							<h4 className='footer-title'>Contacts</h4>
-							<ul className='list-style-two'>
+							<ul className='list-style-b'>
 								<li>
 									<i className='fas fa-map-marker-alt'></i> 1791 Yorkshire
 									Circle Kitty Hawk, NC 27949
@@ -151,10 +151,10 @@ export default function FooterHomeFour() {
 					</div>
 				</div>
 			</div>
-			<div className='copyright-area bg-blue text-white mt-30'>
+			<div className='copyright-area bg-black text-white mt-30'>
 				<div className='container'>
 					<div className='copyright-inner pt-15'>
-						<div className='social-style-one mb-10'>
+						<div className='social-style-a mb-10'>
 							<a href='http://facebook.com'>
 								<i className='fab fa-facebook-f'></i>
 							</a>

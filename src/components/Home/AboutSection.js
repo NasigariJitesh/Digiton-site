@@ -33,7 +33,7 @@ export default function AboutSection() {
 						</div>
 					</div>
 					<div className='col-lg-6'>
-						<div className='about-four-images text-center wow fadeInRight delay-0-2s'>
+						<div className='about-images text-center wow fadeInRight delay-0-2s'>
 							<div className='row'>
 								<div className='col-6'>
 									<img src={aboutThumb} alt='About' />

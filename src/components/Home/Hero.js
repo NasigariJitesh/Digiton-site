@@ -5,7 +5,7 @@ import background from '../../assets/images/hero/hero-four.jpg';
 export default function Hero() {
 	return (
 		<section
-			className='hero-section-three bgs-cover overlay pt-160 rpt-140 pb-80 rpb-100'
+			className='hero-section bgs-cover overlay pt-160 rpt-140 pb-80 rpb-100'
 			style={{ backgroundImage: `url(${background})` }}>
 			<div className='container'>
 				<div className='row align-items-center'>
@@ -21,7 +21,7 @@ export default function Hero() {
 								<a href='/contact' className='theme-btn mr-15 mb-10'>
 									meet with us
 								</a>
-								<a href='/about' className='theme-btn style-five mb-10'>
+								<a href='/about' className='theme-btn style-b mb-10'>
 									learn more
 								</a>
 							</div>

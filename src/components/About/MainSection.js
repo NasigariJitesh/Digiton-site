@@ -42,7 +42,7 @@ export default function MainSection() {
 						</div>
 					</div>
 					<div className='col-md-6'>
-						<div className='about-shape-six ml-50 rml-0 pr-30 wow fadeInRight delay-0-2s'>
+						<div className='about-shape ml-50 rml-0 pr-30 wow fadeInRight delay-0-2s'>
 							<img src={aboutThumb} alt='About' />
 							<img className='about-graph' src={aboutThumbTwo} alt='Graph' />
 						</div>

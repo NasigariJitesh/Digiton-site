@@ -11,7 +11,7 @@ export default function GallerySection() {
 				<div className='row text-white justify-content-center'>
 					<div className='col-xl-3 col-lg-4 col-sm-6'>
 						<div
-							className='gallery-item style-four wow fadeInUp delay-0-2s animated'
+							className='gallery-item style-b wow fadeInUp delay-0-2s animated'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
 								src={
@@ -33,7 +33,7 @@ export default function GallerySection() {
 					</div>
 					<div className='col-xl-3 col-lg-4 col-sm-6'>
 						<div
-							className='gallery-item style-four wow fadeInUp delay-0-4s animated'
+							className='gallery-item style-b wow fadeInUp delay-0-4s animated'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
 								src={
@@ -55,7 +55,7 @@ export default function GallerySection() {
 					</div>
 					<div className='col-xl-3 col-lg-4 col-sm-6'>
 						<div
-							className='gallery-item style-four wow fadeInUp delay-0-6s animated'
+							className='gallery-item style-b wow fadeInUp delay-0-6s animated'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
 								src={
@@ -77,7 +77,7 @@ export default function GallerySection() {
 					</div>
 					<div className='col-xl-3 col-lg-4 col-sm-6'>
 						<div
-							className='gallery-item style-four wow fadeInUp delay-0-8s animated'
+							className='gallery-item style-b wow fadeInUp delay-0-8s animated'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
 								src={
@@ -99,7 +99,7 @@ export default function GallerySection() {
 					</div>
 					<div className='col-xl-3 col-lg-4 col-sm-6'>
 						<div
-							className='gallery-item style-four wow fadeInUp delay-0-2s'
+							className='gallery-item style-b wow fadeInUp delay-0-2s'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
 								src={
@@ -121,7 +121,7 @@ export default function GallerySection() {
 					</div>
 					<div className='col-xl-3 col-lg-4 col-sm-6'>
 						<div
-							className='gallery-item style-four wow fadeInUp delay-0-4s'
+							className='gallery-item style-b wow fadeInUp delay-0-4s'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
 								src={
@@ -143,7 +143,7 @@ export default function GallerySection() {
 					</div>
 					<div className='col-xl-3 col-lg-4 col-sm-6'>
 						<div
-							className='gallery-item style-four wow fadeInUp delay-0-6s'
+							className='gallery-item style-b wow fadeInUp delay-0-6s'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
 								src={
@@ -165,7 +165,7 @@ export default function GallerySection() {
 					</div>
 					<div className='col-xl-3 col-lg-4 col-sm-6'>
 						<div
-							className='gallery-item style-four wow fadeInUp delay-0-8s'
+							className='gallery-item style-b wow fadeInUp delay-0-8s'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
 								src={

@@ -44,10 +44,10 @@ export default function AboutTabSection() {
 	return (
 		<section
 			id='about-tab-section'
-			className='about-tab-section bg-light-black text-white pb-120 rpb-100'>
+			className='about-tab-section bg-yellow text-black pb-120 rpb-100'>
 			<div className='container'>
 				<div
-					className='fact-counter-inner br-5 px-25 pt-80 pb-30 text-white text-center'
+					className='fact-counter-inner br-5 px-25 pt-80 pb-30 text-black text-center'
 					style={{ backgroundImage: `url(${background})` }}>
 					<div className='row'>
 						<div className='col-lg-3 col-sm-6'>
@@ -147,7 +147,7 @@ export default function AboutTabSection() {
 												elit, sed do eiusmod tempor incididunt ut labore et
 												dolore magna aliqua. Ut enim ad minim veniam nostrud
 											</p>
-											<ul className='list-style-one mt-15'>
+											<ul className='list-style-a mt-15'>
 												<li>Custom shortcodes</li>
 												<li>Data Analytics</li>
 												<li>IT Consultancy</li>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function RecentArticle() {
 	return (
-		<section className='news-section-two pt-90 pb-90 rpb-70'>
+		<section className='news-section pt-90 pb-90 rpb-70'>
 			<div className='container'>
 				<div className='row justify-content-center'>
 					<div className='col-xl-4 col-md-6'>
@@ -72,7 +72,7 @@ export default function RecentArticle() {
 					<div className='col-xl-4'>
 						<div className='row'>
 							<div className='col-xl-12 col-sm-6'>
-								<div className='news-item style-three wow fadeInUp delay-0-6s'>
+								<div className='news-item style-a wow fadeInUp delay-0-6s'>
 									<div className='news-content'>
 										<ul className='post-meta-item'>
 											<li>
@@ -99,7 +99,7 @@ export default function RecentArticle() {
 								</div>
 							</div>
 							<div className='col-xl-12 col-sm-6'>
-								<div className='news-item style-three wow fadeInUp delay-0-7s'>
+								<div className='news-item style-a wow fadeInUp delay-0-7s'>
 									<div className='news-content'>
 										<ul className='post-meta-item'>
 											<li>

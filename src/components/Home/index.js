@@ -9,7 +9,7 @@ import Hero from './Hero';
 import OurTeamSection from './OurTeamSection';
 import RecentArticle from './RecentArticle';
 import WhatCanDo from './WhatCanDo';
-import WorkProcessSection from './WorkProcessSection';
+import WorkProgressSection from './WorkProgressSection';
 
 export default function Home() {
 	return (
@@ -21,7 +21,7 @@ export default function Home() {
 			<AboutTabSection />
 			<GallerySection />
 			<OurTeamSection />
-			<WorkProcessSection />
+			<WorkProgressSection />
 			<RecentArticle />
 
 			<Footer />
