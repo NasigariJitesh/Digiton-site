@@ -1,15 +1,15 @@
-import React from "react";
-import FooterHomeTwo from "../../partials/Footers/FooterHomeTwo/index";
-import HeaderHomeOne from "../../partials/Headers/HeaderHomeThree";
-import Hero from "./Hero";
+import React from 'react';
+import Footer from '../../partials/Footer';
+import Header from '../../partials/Header';
+import Hero from './Hero';
 
 export default function Layouts({ children, pageTitle, breadcrumbs = [] }) {
-  return (
-    <>
-      <HeaderHomeOne />
-      <Hero pageTitle={pageTitle} breadcrumbs={breadcrumbs} />
-      {children && children}
-      <FooterHomeTwo />
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<Hero pageTitle={pageTitle} breadcrumbs={breadcrumbs} />
+			{children && children}
+			<Footer />
+		</>
+	);
 }
