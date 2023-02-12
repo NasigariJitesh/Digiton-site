@@ -103,7 +103,8 @@ const getPosts = () => {
 					const sortedList = postlist.sort((a, b) => (a.id < b.id ? 1 : -1));
 					const data = JSON.stringify(sortedList);
 					console.log(data);
-					fs.writeFile('src/posts.json', data);
+					fs.unlink('src/posts.json');
+					fs.writeFileSync('src/posts.json', data);
 				}
 			});
 		});
