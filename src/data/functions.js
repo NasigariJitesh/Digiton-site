@@ -1,10 +1,11 @@
 /* eslint-disable prefer-destructuring */
 /* eslint-disable no-param-reassign */
 /* eslint-disable consistent-return */
-const path = require('path');
-const fs = require('fs');
+import path from 'path';
 
-const dirPath = path.join(__dirname, './blogPosts');
+import fs from 'fs';
+
+const dirPath = path.join(__dirname, '/blogPosts');
 // const dirPathPages = path.join(__dirname, '../src/pages/content');
 const postlist = [];
 // const pagelist = [];
@@ -43,7 +44,7 @@ const formatDate = date => {
 	};
 };
 
-const getPosts = () => {
+export const getPosts = () => {
 	fs.readdir(dirPath, (err, files) => {
 		if (err) {
 			return console.log(`Failed to list contents of directory: ${err}`);
@@ -102,7 +103,6 @@ const getPosts = () => {
 				if (ilist.length === files.length) {
 					const sortedList = postlist.sort((a, b) => (a.id < b.id ? 1 : -1));
 					const data = JSON.stringify(sortedList);
-					console.log(data);
 					fs.writeFileSync('src/posts.json', data);
 				}
 			});
@@ -110,7 +110,7 @@ const getPosts = () => {
 	});
 };
 
-// const getPages = () => {
+export const getPages = () => {};
 // 	fs.readdir(dirPathPages, (err, files) => {
 // 		if (err) {
 // 			return console.log(`Failed to list contents of directory: ${err}`);
@@ -129,5 +129,4 @@ const getPosts = () => {
 // 	});
 // };
 
-getPosts();
 // getPages();
