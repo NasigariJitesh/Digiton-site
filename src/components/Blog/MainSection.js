@@ -1,9 +1,7 @@
+/* eslint-disable no-underscore-dangle */
 import React from 'react';
-import { getPosts } from '../../data/functions';
 
 export default function MainSection() {
-	const blogs = getPosts();
-	console.log(blogs);
 	return (
 		<section className='z-1 blog-page-area bg-lighter'>
 			<div className='container'>
