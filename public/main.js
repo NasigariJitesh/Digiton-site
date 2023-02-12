@@ -102,8 +102,11 @@ const getPosts = () => {
 				if (ilist.length === files.length) {
 					const sortedList = postlist.sort((a, b) => (a.id < b.id ? 1 : -1));
 					const data = JSON.stringify(sortedList);
+
+					fs.unlink('src/posts.json', () => console.log('deleted posts.js'));
+
 					console.log(data);
-					fs.unlink('src/posts.json');
+
 					fs.writeFileSync('src/posts.json', data);
 				}
 			});
