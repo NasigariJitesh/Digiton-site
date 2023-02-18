@@ -11,9 +11,7 @@ on:
 jobs:
   updateBlogs:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x]
+    container: node:14-alpine
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3 
