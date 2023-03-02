@@ -14,7 +14,7 @@ export default function WhatCanDo() {
 				<div className='row justify-content-center'>
 					<div className='col-xl-4 col-md-6'>
 						<div className='feature-item wow fadeInUp delay-0-2s'>
-							<a href='/service/service-details' className='feature-btn'>
+							<a href='/services/service-details' className='feature-btn'>
 								<i className='fas fa-long-arrow-alt-right'></i>
 							</a>
 							<div className='icon'>
@@ -31,7 +31,7 @@ export default function WhatCanDo() {
 					</div>
 					<div className='col-xl-4 col-md-6'>
 						<div className='feature-item wow fadeInUp delay-0-4s'>
-							<a href='/service/service-details' className='feature-btn'>
+							<a href='/services/service-details' className='feature-btn'>
 								<i className='fas fa-long-arrow-alt-right'></i>
 							</a>
 							<div className='icon'>
@@ -48,7 +48,7 @@ export default function WhatCanDo() {
 					</div>
 					<div className='col-xl-4 col-md-6'>
 						<div className='feature-item wow fadeInUp delay-0-6s'>
-							<a href='/service/service-details' className='feature-btn'>
+							<a href='/services/service-details' className='feature-btn'>
 								<i className='fas fa-long-arrow-alt-right'></i>
 							</a>
 							<div className='icon'>
