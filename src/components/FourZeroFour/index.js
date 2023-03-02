@@ -9,7 +9,7 @@ export default function FourZeroFour() {
 			<div className='container'>
 				<div className='error-content'>
 					<img src={errorImg} alt='404 Error' />
-					<h2>Oops! page not found.</h2>
+					<h2>Oops! 404 page not found.</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis

@@ -50,10 +50,10 @@ export default function MainSection() {
 										</div>
 									</div>
 									<h3>
-										<a href='/blog/blog-details'>{blog.title}</a>
+										<a href='/blog-details'>{blog.title}</a>
 									</h3>
 									<p>{blog.content}</p>
-									<a href='/blog/blog-details' className='theme-btn'>
+									<a href='/blog-details' className='theme-btn'>
 										Read More
 									</a>
 								</div>
@@ -61,7 +61,7 @@ export default function MainSection() {
 
 							<div className='blog-standard-item quote-blog wow fadeInUp delay-0-2s'>
 								<h3>
-									{/* <a href='/blog/blog-details'> */}
+									{/* <a href='/blog-details'> */}
 									Meet Smashing Book New Frontiers In Web For Better Enge Tools
 									Techniques.
 									{/* </a> */}

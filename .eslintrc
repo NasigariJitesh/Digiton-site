@@ -6,7 +6,7 @@
 		"prettier",
 		"plugin:jsx-a11y/recommended"
 	],
-	"parser": "@babel/eslint-parser",
+	"parser": "babel-eslint",
 	"parserOptions": {
 		"ecmaVersion": 8
 	},
@@ -23,7 +23,6 @@
 		"react/self-closing-comp": 0,
 		"react/no-unescaped-entities": 0,
 		"jsx-a11y/anchor-is-valid": 0,
-		"react/jsx-no-useless-fragment": [2, { "allowExpressions": true }],
 		"react/jsx-props-no-spreading": 0,
 		"jsx-eslint/eslint-plugin-jsx-a11y": 0,
 		"jsx-a11y/no-static-element-interactions": 0,

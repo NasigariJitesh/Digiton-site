@@ -90,12 +90,12 @@ export default function MainSection() {
 							</div>
 							<div className='row wow fadeInUp delay-0-2s'>
 								<div className='col-sm-6'>
-									<a href='/blog/blog-details' className='next-prev-blog'>
+									<a href='/blog-details' className='next-prev-blog'>
 										<h4>Building Pub Sub Service Using Node And Redis</h4>
 									</a>
 								</div>
 								<div className='col-sm-6'>
-									<a href='/blog/blog-details' className='next-prev-blog'>
+									<a href='/blog-details' className='next-prev-blog'>
 										<h4>Once Upon Time Use Story For Better Engagement</h4>
 									</a>
 								</div>
