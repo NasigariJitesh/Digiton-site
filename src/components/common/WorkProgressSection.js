@@ -43,10 +43,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-1.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-1.png`)}
 									alt='Client Logo'
 								/>
 							</a>
@@ -54,10 +51,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-2.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-2.png`)}
 									alt='Client Logo'
 								/>
 							</a>
@@ -65,10 +59,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-3.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-3.png`)}
 									alt='Client Logo'
 								/>
 							</a>
@@ -76,10 +67,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-4.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-4.png`)}
 									alt='Client Logo'
 								/>
 							</a>
@@ -87,10 +75,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-5.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-5.png`)}
 									alt='Client Logo'
 								/>
 							</a>
@@ -98,10 +83,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-1.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-1.png`)}
 									alt='Client Logo'
 								/>
 							</a>
@@ -109,10 +91,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-2.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-2.png`)}
 									alt='Client Logo'
 								/>
 							</a>
@@ -120,10 +99,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-3.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-3.png`)}
 									alt='Client Logo'
 								/>
 							</a>
@@ -131,10 +107,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-4.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-4.png`)}
 									alt='Client Logo'
 								/>
 							</a>
@@ -142,10 +115,7 @@ export default function WorkProgressSection() {
 						<div className='logo-item'>
 							<a href='#'>
 								<img
-									src={
-										require(`../../assets/images/client-logo/client-logo-5.png`)
-											.default
-									}
+									src={require(`../../assets/images/client-logo/client-logo-5.png`)}
 									alt='Client Logo'
 								/>
 							</a>

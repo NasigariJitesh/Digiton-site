@@ -108,10 +108,7 @@ export default function FooterHomeFour() {
 							<div className='widget-news-wrap'>
 								<div className='widget-news-item'>
 									<img
-										src={
-											require(`../../../assets/images/news/footer-widget-1.jpg`)
-												.default
-										}
+										src={require(`../../../assets/images/news/footer-widget-1.jpg`)}
 										alt='News'
 									/>
 									<div className='widget-news-content'>
@@ -128,10 +125,7 @@ export default function FooterHomeFour() {
 								</div>
 								<div className='widget-news-item'>
 									<img
-										src={
-											require(`../../../assets/images/news/footer-widget-2.jpg`)
-												.default
-										}
+										src={require(`../../../assets/images/news/footer-widget-2.jpg`)}
 										alt='News'
 									/>
 									<div className='widget-news-content'>

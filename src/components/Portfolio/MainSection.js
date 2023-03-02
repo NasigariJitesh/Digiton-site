@@ -15,10 +15,7 @@ export default function MainSection() {
 					<div className='col-xl-4 col-md-6'>
 						<div className='gallery-item style-a wow fadeInUp delay-0-2s'>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-two-1.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-two-1.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -36,10 +33,7 @@ export default function MainSection() {
 					<div className='col-xl-4 col-md-6'>
 						<div className='gallery-item style-a wow fadeInUp delay-0-4s'>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-two-2.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-two-2.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -57,10 +51,7 @@ export default function MainSection() {
 					<div className='col-xl-4 col-md-6'>
 						<div className='gallery-item style-a wow fadeInUp delay-0-6s'>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-two-3.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-two-3.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -78,10 +69,7 @@ export default function MainSection() {
 					<div className='col-xl-4 col-md-6'>
 						<div className='gallery-item style-a wow fadeInUp delay-0-2s'>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-1.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-1.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -99,10 +87,7 @@ export default function MainSection() {
 					<div className='col-xl-4 col-md-6'>
 						<div className='gallery-item style-a wow fadeInUp delay-0-4s'>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-2.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-2.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -120,10 +105,7 @@ export default function MainSection() {
 					<div className='col-xl-4 col-md-6'>
 						<div className='gallery-item style-a wow fadeInUp delay-0-6s'>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-3.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-3.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>

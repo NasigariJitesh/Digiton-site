@@ -8,15 +8,11 @@ export default function AboutSection({ className }) {
 					<div className='col-lg-6'>
 						<div className='about-image rmb-60 mr-10 rmr-0 wow fadeInLeft delay-0-2s'>
 							<img
-								src={
-									require(`../../assets/images/about/about-three-1.jpg`).default
-								}
+								src={require(`../../assets/images/about/about-three-1.jpg`)}
 								alt='About'
 							/>
 							<img
-								src={
-									require(`../../assets/images/about/about-three-2.jpg`).default
-								}
+								src={require(`../../assets/images/about/about-three-2.jpg`)}
 								alt='About'
 							/>
 						</div>

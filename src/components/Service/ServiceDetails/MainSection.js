@@ -67,10 +67,7 @@ export default function MainSection() {
 						<div className='service-details-content wow fadeInRight delay-0-2s'>
 							<div className='image mb-40'>
 								<img
-									src={
-										require(`../../../assets/images/services/service-details.jpg`)
-											.default
-									}
+									src={require(`../../../assets/images/services/service-details.jpg`)}
 									alt='Service Details'
 								/>
 							</div>

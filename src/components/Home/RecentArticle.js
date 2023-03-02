@@ -28,7 +28,7 @@ export default function RecentArticle() {
 						<div className='news-item wow fadeInUp delay-0-4s'>
 							<div className='image'>
 								<img
-									src={require(`../../assets/images/news/news-2.jpg`).default}
+									src={require(`../../assets/images/news/news-2.jpg`)}
 									alt='News'
 								/>
 							</div>
@@ -46,7 +46,7 @@ export default function RecentArticle() {
 									</li>
 								</ul>
 								<h4>
-									<a href='/blog/blog-details'>
+									<a href='/blog-details'>
 										Keep Your Business Safe &amp; Ensure High Availability.
 									</a>
 								</h4>
@@ -57,10 +57,7 @@ export default function RecentArticle() {
 							</div>
 							<div className='news-author'>
 								<img
-									src={
-										require(`../../assets/images/news/news-author-2.jpg`)
-											.default
-									}
+									src={require(`../../assets/images/news/news-author-2.jpg`)}
 									alt='Authro'
 								/>
 								<span className='posted-by'>
@@ -87,7 +84,7 @@ export default function RecentArticle() {
 											</li>
 										</ul>
 										<h4>
-											<a href='/blog/blog-details'>
+											<a href='/blog-details'>
 												Keep Your Business Safe &amp; Ensure High Availability.
 											</a>
 										</h4>
@@ -114,7 +111,7 @@ export default function RecentArticle() {
 											</li>
 										</ul>
 										<h4>
-											<a href='/blog/blog-details'>
+											<a href='/blog-details'>
 												Keep Your Business Safe &amp; Ensure High Availability.
 											</a>
 										</h4>

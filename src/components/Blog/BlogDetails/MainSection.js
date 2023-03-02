@@ -9,10 +9,7 @@ export default function MainSection() {
 						<div className='blog-details-content pt-120 rpt-100 pb-95 rpb-75 pr-15 rpr-0'>
 							<div className='image wow fadeInUp delay-0-2s'>
 								<img
-									src={
-										require(`../../../assets/images/news/blog-standard-1.jpg`)
-											.default
-									}
+									src={require(`../../../assets/images/news/blog-standard-1.jpg`)}
 									alt='Blog Standard'
 								/>
 							</div>

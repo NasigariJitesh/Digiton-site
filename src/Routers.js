@@ -27,7 +27,7 @@ export default function Routers() {
 			<Route exact path='/team-profile' element={<TeamSingle />} />
 			<Route exact path='/testimonial' element={<Testimonial />} />
 			<Route exact path='/blog' element={<Blog />} />
-			<Route exact path='/:slug' element={<BlogDetails />} />
+			<Route exact path='/blog-details' element={<BlogDetails />} />
 			<Route exact path='/404' element={<FourZeroFour />} />
 			<Route exact path='/contact' element={<Contact />} />
 		</Routes>

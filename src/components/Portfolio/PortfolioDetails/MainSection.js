@@ -10,10 +10,7 @@ export default function MainSection() {
 						<div className='portfolio-details-content rmb-55 wow fadeInUp delay-0-2s'>
 							<div className='image mb-35'>
 								<img
-									src={
-										require(`../../../assets/images/gallery/portfolio-details.jpg`)
-											.default
-									}
+									src={require(`../../../assets/images/gallery/portfolio-details.jpg`)}
 									alt='Portfolio Details'
 								/>
 							</div>
@@ -37,10 +34,7 @@ export default function MainSection() {
 								<div className='col-sm-6'>
 									<div className='image mb-30 wow fadeInUp delay-0-2s'>
 										<img
-											src={
-												require(`../../../assets/images/gallery/portfolio-middle-1.jpg`)
-													.default
-											}
+											src={require(`../../../assets/images/gallery/portfolio-middle-1.jpg`)}
 											alt='Portfolio'
 										/>
 									</div>
@@ -48,10 +42,7 @@ export default function MainSection() {
 								<div className='col-sm-6'>
 									<div className='image mb-30 wow fadeInUp delay-0-4s'>
 										<img
-											src={
-												require(`../../../assets/images/gallery/portfolio-middle-2.jpg`)
-													.default
-											}
+											src={require(`../../../assets/images/gallery/portfolio-middle-2.jpg`)}
 											alt='Portfolio'
 										/>
 									</div>

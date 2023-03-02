@@ -14,10 +14,7 @@ export default function GallerySection() {
 							className='gallery-item style-b wow fadeInUp delay-0-2s animated'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-1.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-1.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -36,10 +33,7 @@ export default function GallerySection() {
 							className='gallery-item style-b wow fadeInUp delay-0-4s animated'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-2.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-2.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -58,10 +52,7 @@ export default function GallerySection() {
 							className='gallery-item style-b wow fadeInUp delay-0-6s animated'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-3.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-3.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -80,10 +71,7 @@ export default function GallerySection() {
 							className='gallery-item style-b wow fadeInUp delay-0-8s animated'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-4.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-4.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -102,10 +90,7 @@ export default function GallerySection() {
 							className='gallery-item style-b wow fadeInUp delay-0-2s'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-5.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-5.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -124,10 +109,7 @@ export default function GallerySection() {
 							className='gallery-item style-b wow fadeInUp delay-0-4s'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-6.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-6.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -146,10 +128,7 @@ export default function GallerySection() {
 							className='gallery-item style-b wow fadeInUp delay-0-6s'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-7.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-7.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>
@@ -168,10 +147,7 @@ export default function GallerySection() {
 							className='gallery-item style-b wow fadeInUp delay-0-8s'
 							style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
 							<img
-								src={
-									require(`../../assets/images/gallery/gallery-four-8.jpg`)
-										.default
-								}
+								src={require(`../../assets/images/gallery/gallery-four-8.jpg`)}
 								alt='Gallery'
 							/>
 							<div className='gallery-content'>

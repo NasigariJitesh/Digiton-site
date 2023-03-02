@@ -6,9 +6,11 @@
 		"prettier",
 		"plugin:jsx-a11y/recommended"
 	],
-	"parser": "babel-eslint",
+	"parser": "@babel/eslint-parser",
 	"parserOptions": {
-		"ecmaVersion": 8
+		"requireConfigFile": false,
+		"ecmaVersion": 2018,
+		"sourceType": "module"
 	},
 	"env": {
 		"browser": true,
@@ -28,6 +30,7 @@
 		"jsx-a11y/no-static-element-interactions": 0,
 		"jsx-a11y/label-has-associated-control": 0,
 		"jsx-a11y/no-noninteractive-element-interactions": 0,
+		"react/jsx-no-useless-fragment": [2, { "allowExpressions": true }],
 		"react/react-in-jsx-scope": 0,
 		"react-hooks/rules-of-hooks": "error",
 		"no-console": 0,

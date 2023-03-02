@@ -18,9 +18,7 @@ export default function OurTeamSection({ className }) {
 						<div className='team-member-three wow fadeInUp delay-0-2s'>
 							<div className='image'>
 								<img
-									src={
-										require(`../../assets/images/team/team-three-1.jpg`).default
-									}
+									src={require(`../../assets/images/team/team-three-1.jpg`)}
 									alt='Team Member'
 								/>
 							</div>
@@ -50,9 +48,7 @@ export default function OurTeamSection({ className }) {
 						<div className='team-member-three wow fadeInUp delay-0-4s'>
 							<div className='image'>
 								<img
-									src={
-										require(`../../assets/images/team/team-three-2.jpg`).default
-									}
+									src={require(`../../assets/images/team/team-three-2.jpg`)}
 									alt='Team Member'
 								/>
 							</div>
@@ -82,9 +78,7 @@ export default function OurTeamSection({ className }) {
 						<div className='team-member-three wow fadeInUp delay-0-6s'>
 							<div className='image'>
 								<img
-									src={
-										require(`../../assets/images/team/team-three-3.jpg`).default
-									}
+									src={require(`../../assets/images/team/team-three-3.jpg`)}
 									alt='Team Member'
 								/>
 							</div>
