@@ -10,7 +10,10 @@
 	"parserOptions": {
 		"requireConfigFile": false,
 		"ecmaVersion": 2018,
-		"sourceType": "module"
+		"sourceType": "module",
+		"babelOptions": {
+			"presets": ["@babel/preset-react"]
+		}
 	},
 	"env": {
 		"browser": true,

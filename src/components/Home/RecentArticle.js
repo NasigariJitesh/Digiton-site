@@ -46,7 +46,7 @@ export default function RecentArticle() {
 									</li>
 								</ul>
 								<h4>
-									<a href='/blog-details'>
+									<a href='/blog/blog-details'>
 										Keep Your Business Safe &amp; Ensure High Availability.
 									</a>
 								</h4>
@@ -84,7 +84,7 @@ export default function RecentArticle() {
 											</li>
 										</ul>
 										<h4>
-											<a href='/blog-details'>
+											<a href='/blog/blog-details'>
 												Keep Your Business Safe &amp; Ensure High Availability.
 											</a>
 										</h4>
@@ -111,7 +111,7 @@ export default function RecentArticle() {
 											</li>
 										</ul>
 										<h4>
-											<a href='/blog-details'>
+											<a href='/blog/blog-details'>
 												Keep Your Business Safe &amp; Ensure High Availability.
 											</a>
 										</h4>

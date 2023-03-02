@@ -21,9 +21,11 @@ export default function MainSection() {
 							<div className='gallery-content'>
 								<div className='gallery-content-inner'>
 									<h5>
-										<a href='/portfolio-details'>Cyber Security Services</a>
+										<a href='/portfolio/portfolio-details'>
+											Cyber Security Services
+										</a>
 									</h5>
-									<a href='/portfolio-details' className='learn-more'>
+									<a href='/portfolio/portfolio-details' className='learn-more'>
 										Read More <i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -39,9 +41,11 @@ export default function MainSection() {
 							<div className='gallery-content'>
 								<div className='gallery-content-inner'>
 									<h5>
-										<a href='/portfolio-details'>Software License Management</a>
+										<a href='/portfolio/portfolio-details'>
+											Software License Management
+										</a>
 									</h5>
-									<a href='/portfolio-details' className='learn-more'>
+									<a href='/portfolio/portfolio-details' className='learn-more'>
 										Read More <i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -57,9 +61,11 @@ export default function MainSection() {
 							<div className='gallery-content'>
 								<div className='gallery-content-inner'>
 									<h5>
-										<a href='/portfolio-details'>Knowledge Base & Live Chat</a>
+										<a href='/portfolio/portfolio-details'>
+											Knowledge Base & Live Chat
+										</a>
 									</h5>
-									<a href='/portfolio-details' className='learn-more'>
+									<a href='/portfolio/portfolio-details' className='learn-more'>
 										Read More <i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -75,9 +81,11 @@ export default function MainSection() {
 							<div className='gallery-content'>
 								<div className='gallery-content-inner'>
 									<h5>
-										<a href='/portfolio-details'>Cyber Security Services</a>
+										<a href='/portfolio/portfolio-details'>
+											Cyber Security Services
+										</a>
 									</h5>
-									<a href='/portfolio-details' className='learn-more'>
+									<a href='/portfolio/portfolio-details' className='learn-more'>
 										Read More <i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -93,9 +101,11 @@ export default function MainSection() {
 							<div className='gallery-content'>
 								<div className='gallery-content-inner'>
 									<h5>
-										<a href='/portfolio-details'>Software License Management</a>
+										<a href='/portfolio/portfolio-details'>
+											Software License Management
+										</a>
 									</h5>
-									<a href='/portfolio-details' className='learn-more'>
+									<a href='/portfolio/portfolio-details' className='learn-more'>
 										Read More <i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -111,9 +121,11 @@ export default function MainSection() {
 							<div className='gallery-content'>
 								<div className='gallery-content-inner'>
 									<h5>
-										<a href='/portfolio-details'>Knowledge Base & Live Chat</a>
+										<a href='/portfolio/portfolio-details'>
+											Knowledge Base & Live Chat
+										</a>
 									</h5>
-									<a href='/portfolio-details' className='learn-more'>
+									<a href='/portfolio/portfolio-details' className='learn-more'>
 										Read More <i className='fas fa-arrow-right'></i>
 									</a>
 								</div>

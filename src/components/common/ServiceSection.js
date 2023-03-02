@@ -16,14 +16,14 @@ function ServiceSection() {
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 									do eiusmod
 								</p>
-								<a className='btn-circle' href='/service-details'>
+								<a className='btn-circle' href='/services/service-details'>
 									<i className='fas fa-long-arrow-alt-right'></i>
 								</a>
 							</div>
 							<div className='service-hover bg-black text-white'>
 								<h3>Preparing For Your Business Success With IT Solution</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisc</p>
-								<a href='/service-details' className='theme-btn'>
+								<a href='/services/service-details' className='theme-btn'>
 									Learn More
 								</a>
 							</div>
@@ -40,14 +40,14 @@ function ServiceSection() {
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 									do eiusmod
 								</p>
-								<a className='btn-circle' href='/service-details'>
+								<a className='btn-circle' href='/services/service-details'>
 									<i className='fas fa-long-arrow-alt-right'></i>
 								</a>
 							</div>
 							<div className='service-hover bg-black text-white'>
 								<h3>Preparing For Your Business Success With IT Solution</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisc</p>
-								<a href='/service-details' className='theme-btn'>
+								<a href='/services/service-details' className='theme-btn'>
 									Learn More
 								</a>
 							</div>
@@ -64,14 +64,14 @@ function ServiceSection() {
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 									do eiusmod
 								</p>
-								<a className='btn-circle' href='/service-details'>
+								<a className='btn-circle' href='/services/service-details'>
 									<i className='fas fa-long-arrow-alt-right'></i>
 								</a>
 							</div>
 							<div className='service-hover bg-black text-white'>
 								<h3>Preparing For Your Business Success With IT Solution</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisc</p>
-								<a href='/service-details' className='theme-btn'>
+								<a href='/services/service-details' className='theme-btn'>
 									Learn More
 								</a>
 							</div>
@@ -88,14 +88,14 @@ function ServiceSection() {
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 									do eiusmod
 								</p>
-								<a className='btn-circle' href='/service-details'>
+								<a className='btn-circle' href='/services/service-details'>
 									<i className='fas fa-long-arrow-alt-right'></i>
 								</a>
 							</div>
 							<div className='service-hover bg-black text-white'>
 								<h3>Preparing For Your Business Success With IT Solution</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisc</p>
-								<a href='/service-details' className='theme-btn'>
+								<a href='/services/service-details' className='theme-btn'>
 									Learn More
 								</a>
 							</div>

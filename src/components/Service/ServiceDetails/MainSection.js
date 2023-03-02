@@ -11,19 +11,19 @@ export default function MainSection() {
 							<div className='widget widget-services'>
 								<ul>
 									<li>
-										<a href='/service-details'>Data Center</a>
+										<a href='/services/service-details'>Data Center</a>
 									</li>
 									<li className='active'>
-										<a href='/service-details'>IT Management</a>
+										<a href='/services/service-details'>IT Management</a>
 									</li>
 									<li>
-										<a href='/service-details'>Software Development</a>
+										<a href='/services/service-details'>Software Development</a>
 									</li>
 									<li>
-										<a href='/service-details'>Web Development</a>
+										<a href='/services/service-details'>Web Development</a>
 									</li>
 									<li>
-										<a href='/service-details'>Cloud Services</a>
+										<a href='/services/service-details'>Cloud Services</a>
 									</li>
 								</ul>
 							</div>

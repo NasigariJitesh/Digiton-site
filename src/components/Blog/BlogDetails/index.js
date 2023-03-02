@@ -9,7 +9,7 @@ export default function BlogDetails() {
 			breadcrumbs={[
 				{ name: 'home', path: '/' },
 				{ name: 'blog', path: '/blog' },
-				{ name: 'blog details', path: '/blog-details' },
+				{ name: 'blog details', path: '/blog/blog-details' },
 			]}>
 			<MainSection />
 		</Layouts>

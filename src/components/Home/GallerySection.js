@@ -21,7 +21,7 @@ export default function GallerySection() {
 								<div className='gallery-content-inner'>
 									<span className='category'>Our Gallery</span>
 									<h5>Laptop in the office</h5>
-									<a href='/portfolio-details'>
+									<a href='/portfolio/portfolio-details'>
 										<i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -40,7 +40,7 @@ export default function GallerySection() {
 								<div className='gallery-content-inner'>
 									<span className='category'>Our Gallery</span>
 									<h5>Laptop in the office</h5>
-									<a href='/portfolio-details'>
+									<a href='/portfolio/portfolio-details'>
 										<i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -59,7 +59,7 @@ export default function GallerySection() {
 								<div className='gallery-content-inner'>
 									<span className='category'>Our Gallery</span>
 									<h5>Laptop in the office</h5>
-									<a href='/portfolio-details'>
+									<a href='/portfolio/portfolio-details'>
 										<i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -78,7 +78,7 @@ export default function GallerySection() {
 								<div className='gallery-content-inner'>
 									<span className='category'>Our Gallery</span>
 									<h5>Laptop in the office</h5>
-									<a href='/portfolio-details'>
+									<a href='/portfolio/portfolio-details'>
 										<i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -97,7 +97,7 @@ export default function GallerySection() {
 								<div className='gallery-content-inner'>
 									<span className='category'>Our Gallery</span>
 									<h5>Laptop in the office</h5>
-									<a href='/portfolio-details'>
+									<a href='/portfolio/portfolio-details'>
 										<i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -116,7 +116,7 @@ export default function GallerySection() {
 								<div className='gallery-content-inner'>
 									<span className='category'>Our Gallery</span>
 									<h5>Laptop in the office</h5>
-									<a href='/portfolio-details'>
+									<a href='/portfolio/portfolio-details'>
 										<i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -135,7 +135,7 @@ export default function GallerySection() {
 								<div className='gallery-content-inner'>
 									<span className='category'>Our Gallery</span>
 									<h5>Laptop in the office</h5>
-									<a href='/portfolio-details'>
+									<a href='/portfolio/portfolio-details'>
 										<i className='fas fa-arrow-right'></i>
 									</a>
 								</div>
@@ -154,7 +154,7 @@ export default function GallerySection() {
 								<div className='gallery-content-inner'>
 									<span className='category'>Our Gallery</span>
 									<h5>Laptop in the office</h5>
-									<a href='/portfolio-details'>
+									<a href='/portfolio/portfolio-details'>
 										<i className='fas fa-arrow-right'></i>
 									</a>
 								</div>

@@ -9,7 +9,7 @@ export default function TeamSingle() {
 			breadcrumbs={[
 				{ name: 'Home', path: '/' },
 				{ name: 'team', path: '/team' },
-				{ name: 'team Single', path: '/team-profile' },
+				{ name: 'team Single', path: '/team/team-profile' },
 			]}>
 			<MainSection />
 		</Layouts>

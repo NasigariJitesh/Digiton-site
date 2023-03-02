@@ -113,13 +113,13 @@ export default function FooterHomeFour() {
 									/>
 									<div className='widget-news-content'>
 										<h6>
-											<a href='/blog-details'>
+											<a href='/blog/blog-details'>
 												Making A Strong Case For Accessibility
 											</a>
 										</h6>
 										<span className='date'>
 											<i className='far fa-calendar-alt'></i>
-											<a href='/blog-details'>15 Dec 2021</a>
+											<a href='/blog/blog-details'>15 Dec 2021</a>
 										</span>
 									</div>
 								</div>
@@ -130,13 +130,13 @@ export default function FooterHomeFour() {
 									/>
 									<div className='widget-news-content'>
 										<h6>
-											<a href='/blog-details'>
+											<a href='/blog/blog-details'>
 												An Introduction Figma Interactive Compo
 											</a>
 										</h6>
 										<span className='date'>
 											<i className='far fa-calendar-alt'></i>
-											<a href='/blog-details'>15 Dec 2021</a>
+											<a href='/blog/blog-details'>15 Dec 2021</a>
 										</span>
 									</div>
 								</div>

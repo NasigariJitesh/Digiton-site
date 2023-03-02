@@ -108,7 +108,7 @@ export default function AboutTabSection() {
 									onClick={e => tabHandler(e, datas.id)}
 									className={tab === datas.id ? 'active' : ''}
 									data-toggle='tab'
-									href='/service-details'>
+									href='/services/service-details'>
 									<i className={datas.icn}></i>
 									<h3>{datas.content}</h3>
 								</a>

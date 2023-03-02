@@ -9,7 +9,7 @@ export default function ProtfolioDetails() {
 			breadcrumbs={[
 				{ name: 'home', path: '/' },
 				{ name: 'Portfolio', path: '/portfolio' },
-				{ name: 'portfolio details', path: '/portfolio-details' },
+				{ name: 'portfolio details', path: '/portfolio/portfolio-details' },
 			]}>
 			<MainSection />
 		</Layouts>

@@ -138,7 +138,7 @@ export default function WorkProgressSection() {
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 									do eiusmod tempor incididunt ut labore
 								</p>
-								<a href='/service-details' className='learn-more'>
+								<a href='/services/service-details' className='learn-more'>
 									Read More <i className='fas fa-arrow-right'></i>
 								</a>
 							</div>
@@ -157,7 +157,7 @@ export default function WorkProgressSection() {
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 									do eiusmod tempor incididunt ut labore
 								</p>
-								<a href='/service-details' className='learn-more'>
+								<a href='/services/service-details' className='learn-more'>
 									Read More <i className='fas fa-arrow-right'></i>
 								</a>
 							</div>
@@ -176,7 +176,7 @@ export default function WorkProgressSection() {
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 									do eiusmod tempor incididunt ut labore
 								</p>
-								<a href='/service-details' className='learn-more'>
+								<a href='/services/service-details' className='learn-more'>
 									Read More <i className='fas fa-arrow-right'></i>
 								</a>
 							</div>

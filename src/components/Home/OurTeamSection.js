@@ -24,7 +24,7 @@ export default function OurTeamSection({ className }) {
 							</div>
 							<div className='member-designation'>
 								<h3>
-									<a href='/team-profile'>Charles P. Johnson</a>
+									<a href='/team/team-profile'>Charles P. Johnson</a>
 								</h3>
 								<span>CEO & Founder</span>
 								<div className='social-style-a'>
@@ -54,7 +54,7 @@ export default function OurTeamSection({ className }) {
 							</div>
 							<div className='member-designation'>
 								<h3>
-									<a href='/team-profile'>Kenneth B. Jones</a>
+									<a href='/team/team-profile'>Kenneth B. Jones</a>
 								</h3>
 								<span>Web Developer</span>
 								<div className='social-style-a'>
@@ -84,7 +84,7 @@ export default function OurTeamSection({ className }) {
 							</div>
 							<div className='member-designation'>
 								<h3>
-									<a href='/team-profile'>Marcelo L. Cameron</a>
+									<a href='/team/team-profile'>Marcelo L. Cameron</a>
 								</h3>
 								<span>Graphics Designer</span>
 								<div className='social-style-a'>

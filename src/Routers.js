@@ -20,14 +20,22 @@ export default function Routers() {
 			<Route exact path='/' element={<Home />} />
 			<Route exact path='/about' element={<About />} />
 			<Route exact path='/services' element={<Service />} />
-			<Route exact path='/service-details' element={<ServiceDetails />} />
+			<Route
+				exact
+				path='/services/service-details'
+				element={<ServiceDetails />}
+			/>
 			<Route exact path='/portfolio' element={<Portfolio />} />
-			<Route exact path='/portfolio-details' element={<ProtfolioDetails />} />
+			<Route
+				exact
+				path='/portfolio/portfolio-details'
+				element={<ProtfolioDetails />}
+			/>
 			<Route exact path='/team' element={<Team />} />
-			<Route exact path='/team-profile' element={<TeamSingle />} />
+			<Route exact path='/team/team-profile' element={<TeamSingle />} />
 			<Route exact path='/testimonial' element={<Testimonial />} />
 			<Route exact path='/blog' element={<Blog />} />
-			<Route exact path='/blog-details' element={<BlogDetails />} />
+			<Route exact path='/blog/blog-details' element={<BlogDetails />} />
 			<Route exact path='/404' element={<FourZeroFour />} />
 			<Route exact path='/contact' element={<Contact />} />
 		</Routes>
