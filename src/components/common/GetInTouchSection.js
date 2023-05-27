@@ -1,5 +1,4 @@
 import React from 'react';
-import background from '../../assets/images/contact/home-two.jpg';
 
 export default function GetInTouchSection() {
 	return (
@@ -92,13 +91,7 @@ export default function GetInTouchSection() {
 							</div>
 						</div>
 						<div className='col-lg-5'>
-							<div
-								className='contact-image-number style-two bgs-cover overlay wow fadeInUp delay-0-4s animated'
-								style={{
-									backgroundImage: `url(${background})`,
-									visibility: 'visible',
-									animationName: 'fadeInUp',
-								}}>
+							<div className='contact-image-number style-two bgs-cover overlay wow fadeInUp delay-0-4s animated'>
 								<div className='contact-informations text-white'>
 									<h3>Don't hesitate to contact us</h3>
 									<ul className='contact-info'>

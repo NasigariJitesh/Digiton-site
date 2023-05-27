@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TestimonialSection from '../common/TestimonialSection1';
 import TestimonialLayout from './TestimonialLayout';
 
 export default function Testimonial() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<TestimonialLayout
 			pageTitle='Testimonial'

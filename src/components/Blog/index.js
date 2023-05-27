@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import BacktoTopCom from '../helpers/BackToTopCom';
 import Layouts from '../helpers/Layouts/index';
 import MainSection from './MainSection';
 
 export default function Blog() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<Layouts
 			pageTitle='Blog'

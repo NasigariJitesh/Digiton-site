@@ -1,6 +1,5 @@
 import React from 'react';
 import GetInTouchSection from '../common/GetInTouchSection';
-import TestimonialSection from '../common/TestimonialSection';
 import BacktoTopCom from './BackToTopCom';
 import Layouts from './Layouts';
 
@@ -12,7 +11,7 @@ export default function InnerPageDefaultLayout({
 	return (
 		<Layouts pageTitle={pageTitle} breadcrumbs={breadcrumbs}>
 			{children && children}
-			<TestimonialSection />
+			{/* <TestimonialSection /> */}
 			<GetInTouchSection />
 			<BacktoTopCom />
 		</Layouts>

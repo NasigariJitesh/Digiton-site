@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import errorImg from '../../assets/images/404.png';
 
 export default function FourZeroFour() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	const navigate = useNavigate();
 	return (
 		<section className='error-page text-center py-120 rpy-100'>
@@ -18,7 +21,7 @@ export default function FourZeroFour() {
 					</p>
 					<a
 						href='#'
-						onClick={e => {
+						onClick={(e) => {
 							e.preventDefault();
 							navigate(-1);
 						}}

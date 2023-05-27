@@ -3,6 +3,7 @@ import aboutCircleDots from '../../assets/images/about/about-circle-dots.png';
 import aboutThumbTwo from '../../assets/images/about/about-four-2.jpg';
 import aboutThumb from '../../assets/images/about/about-four.jpg';
 import logoCircle from '../../assets/images/logos/logo-circle.png';
+import { home } from '../../data/data';
 
 export default function AboutSection() {
 	return (
@@ -12,23 +13,13 @@ export default function AboutSection() {
 					<div className='col-lg-6'>
 						<div className='about-content pr-90 rpr-0 rmb-55 wow fadeInLeft delay-0-2s'>
 							<div className='section-title mb-35'>
-								<span className='sub-title'>It Support For Business</span>
-								<h2>
-									Preparing for your success trusted source in IT services for
-									global providing
-								</h2>
+								<span className='sub-title'>{home.about.title}</span>
+								<h2>{home.about.heading}</h2>
 							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam nostrud
-							</p>
-							<i>
-								Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.
-							</i>
+							<p>{home.about.description}</p>
+							<i>{home.about.bottomLine}</i>
 							<a href='/about' className='theme-btn mt-25'>
-								Learn About More
+								{home.about.cta}
 							</a>
 						</div>
 					</div>

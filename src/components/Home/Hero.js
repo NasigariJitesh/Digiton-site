@@ -1,6 +1,7 @@
 import React from 'react';
 import shape from '../../assets/images/hero/hero-four-shape.png';
 import background from '../../assets/images/hero/hero-four.jpg';
+import { home } from '../../data/data';
 
 export default function Hero() {
 	return (
@@ -12,10 +13,10 @@ export default function Hero() {
 					<div className='col-lg-7'>
 						<div className='hero-content text-white rmb-65'>
 							<span className='sub-title d-block wow fadeInUp delay-0-2s'>
-								EMPOWER YOUR BUSINESS
+								{home.banner.caption}
 							</span>
 							<h1 className='wow fadeInUp delay-0-4s mt-20'>
-								Excellent services for IT success
+								{home.banner.title}
 							</h1>
 							<div className='hero-btns mt-35 wow fadeInUp delay-0-6s'>
 								<a href='/contact' className='theme-btn mr-15 mb-10'>

@@ -1,9 +1,11 @@
-import React from 'react';
-import background from '../../assets/images/contact/contact-page.jpg';
+import React, { useEffect } from 'react';
 import BacktoTopCom from '../helpers/BackToTopCom';
 import Layouts from '../helpers/Layouts';
 
 export default function Contact() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<Layouts
 			pageTitle='Contact us'
@@ -35,9 +37,7 @@ export default function Contact() {
 					</div>
 					<div className='row'>
 						<div className='col-lg-4'>
-							<div
-								className='contact-form-left bgs-cover h-100 wow fadeInLeft delay-0-2s'
-								style={{ backgroundImage: `url(${background})` }}>
+							<div className='contact-form-left bgs-cover h-100 wow fadeInLeft delay-0-2s'>
 								<h2>Leave A Message</h2>
 							</div>
 						</div>

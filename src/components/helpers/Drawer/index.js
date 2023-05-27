@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/images/logos/logo-three.png';
+import logo from '../../../assets/images/logos/logo-two.png';
 import './style.css';
 
 function Drawer({ drawer, action }) {
 	return (
 		<>
 			<div
-				onClick={e => action(e)}
+				onClick={(e) => action(e)}
 				className={`off_canvars_overlay ${drawer ? 'active' : ''}`}></div>
 			<div className='offcanvas_menu'>
 				<div className='container-fluid'>
@@ -35,9 +35,6 @@ function Drawer({ drawer, action }) {
 										</li>
 										<li>
 											<Link to='/team'>Team</Link>
-										</li>
-										<li>
-											<Link to='/team'>Testimonial</Link>
 										</li>
 
 										<li>

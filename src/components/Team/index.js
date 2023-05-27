@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import OurTeamSection from '../Home/OurTeamSection';
 import TeamLayout from './TeamLayout';
 
 export default function Team() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<TeamLayout
 			pageTitle='Team'

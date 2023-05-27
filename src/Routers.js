@@ -6,12 +6,9 @@ import Contact from './components/Contact/index';
 import FourZeroFour from './components/FourZeroFour/index';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
-import ProtfolioDetails from './components/Portfolio/PortfolioDetails';
 import Service from './components/Service';
 import ServiceDetails from './components/Service/ServiceDetails';
 import Team from './components/Team';
-import TeamSingle from './components/Team/TeamSingle';
-import Testimonial from './components/Testimonial';
 
 export default function Routers() {
 	return (
@@ -20,22 +17,12 @@ export default function Routers() {
 			<Route exact path='/' element={<Home />} />
 			<Route exact path='/about' element={<About />} />
 			<Route exact path='/services' element={<Service />} />
-			<Route
-				exact
-				path='/services/service-details'
-				element={<ServiceDetails />}
-			/>
+			<Route exact path='/services/:slug' element={<ServiceDetails />} />
 			<Route exact path='/portfolio' element={<Portfolio />} />
-			<Route
-				exact
-				path='/portfolio/portfolio-details'
-				element={<ProtfolioDetails />}
-			/>
+
 			<Route exact path='/team' element={<Team />} />
-			<Route exact path='/team/team-profile' element={<TeamSingle />} />
-			<Route exact path='/testimonial' element={<Testimonial />} />
 			<Route exact path='/blog' element={<Blog />} />
-			<Route exact path='/blog/blog-details' element={<BlogDetails />} />
+			<Route exact path='/blog/:slug' element={<BlogDetails />} />
 			<Route exact path='/404' element={<FourZeroFour />} />
 			<Route exact path='/contact' element={<Contact />} />
 		</Routes>

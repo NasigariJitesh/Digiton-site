@@ -5889,9 +5889,9 @@ h6,
 	-ms-transform: translateY(0);
 	transform: translateY(0);
 	width: 100%;
-	height: 80%;
+	height: 100%;
 	left: 0;
-	bottom: 0;
+	top: 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -5931,7 +5931,7 @@ h6,
 	width: 100%;
 	height: 100%;
 	left: 0;
-	bottom: 0;
+	top: 400;
 	opacity: 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -6149,9 +6149,8 @@ h6,
 	width: 30px;
 	height: 30px;
 	opacity: 1;
-	color: #f8f8f8;
 	line-height: 30px;
-	background: #ffb81a;
+	background: #f8f8f8;
 }
 
 .blog-footer .popular-tags b {
@@ -6383,7 +6382,6 @@ blockquote .author {
 	padding: 100px 50px;
 	z-index: 1;
 	position: relative;
-	background: url(../images/news/call-action-widget.jpg) no-repeat center/cover;
 }
 .widget-call-action::before {
 	position: absolute;
@@ -8580,4 +8578,8 @@ blockquote .author {
 
 .footer-style .list-style-b i {
 	color: #e29a00;
+}
+
+.fab {
+	color: #ffb81a;
 }

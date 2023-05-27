@@ -5,42 +5,23 @@ const path = require('path');
 const fs = require('fs');
 
 const dirPath = path.join(__dirname, './blogPosts');
-// const dirPathPages = path.join(__dirname, '../src/pages/content');
+
 const postlist = [];
-// const pagelist = [];
 
-const months = {
-	'01': 'January',
-	'02': 'February',
-	'03': 'March',
-	'04': 'April',
-	'05': 'May',
-	'06': 'June',
-	'07': 'July',
-	'08': 'August',
-	'09': 'September',
-	10: 'October',
-	11: 'November',
-	12: 'December',
-};
+const slugList = [];
 
-const formatDate = date => {
-	const datetimeArray = date.split('T');
-	const dateArray = datetimeArray[0].split('-');
-	const timeArray = datetimeArray[1].split(':');
-	const month = dateArray[1];
-	const monthName = months[dateArray[1]];
-	const day = dateArray[2];
-	const year = dateArray[0];
-	const time = `${timeArray[0]}:${timeArray[1]}`;
+const slugify = (title) => {
+	let slug = title.toLowerCase().trim().split(' ').join('-');
 
-	return {
-		month,
-		monthName,
-		day,
-		year,
-		time,
-	};
+	if (slugList.includes(slug)) {
+		let duplicateSlug = slug;
+		for (let i = 1; slugList.includes(duplicateSlug); i += 1) {
+			duplicateSlug = `${slug}-${i}`;
+		}
+		slug = duplicateSlug;
+	}
+	slugList.push(slug);
+	return slug;
 };
 
 const getPosts = () => {
@@ -65,7 +46,7 @@ const getPosts = () => {
 							metadataIndices[0] + 1,
 							metadataIndices[1]
 						);
-						metadata.forEach(line => {
+						metadata.forEach((line) => {
 							obj[line.split(': ')[0]] = line.split(': ')[1];
 						});
 						return obj;
@@ -81,28 +62,37 @@ const getPosts = () => {
 				const metadataIndices = lines.reduce(getMetadataIndices, []);
 				const metadata = parseMetadata({ lines, metadataIndices });
 				const content = parseContent({ lines, metadataIndices });
+
 				const parsedDate = metadata.date
-					? formatDate(metadata.date)
+					? new Date(metadata.date.replace('\r', ''))
 					: new Date();
-				const publishedDate = `${parsedDate.monthName} ${parsedDate.day}, ${parsedDate.year}`;
-				const datestring = `${parsedDate.year}-${parsedDate.month}-${parsedDate.day}T${parsedDate.time}:00`;
-				const date = new Date(datestring);
-				const timestamp = date.getTime() / 1000;
+				const publishedDate = parsedDate.toLocaleDateString('en-US', {
+					year: 'numeric',
+					month: 'long',
+					day: 'numeric',
+				});
+				const time = parsedDate.toLocaleString('en-US', {
+					hour: 'numeric',
+					minute: 'numeric',
+					hour12: true,
+				});
+
 				post = {
-					id: timestamp,
+					slug: slugify(metadata.title),
+					id: parsedDate.getTime(),
 					title: metadata.title ? metadata.title : 'No title given',
 					author: metadata.author ? metadata.author : 'No author given',
 					date: publishedDate || 'No date given',
-					time: parsedDate.time,
-					thumbnail: metadata.thumbnail,
+					time: time || 'No time given',
+					thumbnail: metadata.thumbnail.replace('\r', ''),
 					content: content || 'No content given',
+					timestamp: metadata.date.replace('\r', ''),
 				};
 				postlist.push(post);
 				ilist.push(i);
 				if (ilist.length === files.length) {
 					const sortedList = postlist.sort((a, b) => (a.id < b.id ? 1 : -1));
 					const data = JSON.stringify(sortedList);
-
 					fs.writeFileSync('src/posts.json', data);
 				}
 			});
@@ -110,24 +100,4 @@ const getPosts = () => {
 	});
 };
 
-// const getPages = () => {
-// 	fs.readdir(dirPathPages, (err, files) => {
-// 		if (err) {
-// 			return console.log(`Failed to list contents of directory: ${err}`);
-// 		}
-// 		files.forEach(file => {
-// 			let page;
-// 			fs.readFile(`${dirPathPages}/${file}`, 'utf8', (error, contents) => {
-// 				page = {
-// 					content: contents,
-// 				};
-// 				pagelist.push(page);
-// 				const data = JSON.stringify(pagelist);
-// 				fs.writeFileSync('src/pages.json', data);
-// 			});
-// 		});
-// 	});
-// };
-
 getPosts();
-// getPages();

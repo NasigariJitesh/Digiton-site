@@ -19,9 +19,6 @@ function Navigation({ className }) {
 				<li>
 					<Link to='/team'>Team</Link>
 				</li>
-				<li>
-					<Link to='/testimonial'>Testimonial</Link>
-				</li>
 
 				<li>
 					<Link to='/blog'>Blog</Link>

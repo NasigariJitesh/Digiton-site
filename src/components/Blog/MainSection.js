@@ -1,11 +1,11 @@
 /* eslint-disable no-underscore-dangle */
 import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import BLOGS from '../../posts.json';
 
 export default function MainSection() {
 	const totalPages = Math.ceil(BLOGS.length / 3);
 	const [page, setPage] = useState(1);
-	console.log(BLOGS);
 	const currentPageBlogs = BLOGS.slice((page - 1) * 3, page * 3);
 
 	return (
@@ -14,7 +14,7 @@ export default function MainSection() {
 				<div className='row'>
 					<div className='col-lg-8'>
 						<div className='blog-standard-content pt-120 rpt-100 pb-110 rpb-90 pr-15 rpr-0'>
-							{currentPageBlogs.map(blog => (
+							{currentPageBlogs.map((blog) => (
 								<div className='blog-standard-item wow fadeInUp delay-0-2s'>
 									<div className='image'>
 										<img
@@ -49,7 +49,8 @@ export default function MainSection() {
 									<h3>
 										<a href='/blog/blog-details'>{blog.title}</a>
 									</h3>
-									<p>{blog.content}</p>
+									<ReactMarkdown skipHtml>{blog.content}</ReactMarkdown>
+
 									<a href='/blog/blog-details' className='theme-btn'>
 										Read More
 									</a>
@@ -69,7 +70,7 @@ export default function MainSection() {
 								<li
 									className={`page-item${page === 1 ? ' disabled' : null}`}
 									onClick={() => {
-										if (page - 1 > 0) setPage(prev => prev - 1);
+										if (page - 1 > 0) setPage((prev) => prev - 1);
 									}}>
 									<span className='page-link'>
 										<i className='fas fa-chevron-left'></i>
@@ -108,7 +109,7 @@ export default function MainSection() {
 										page === totalPages ? ' disabled' : null
 									}`}
 									onClick={() => {
-										if (page + 1 <= totalPages) setPage(prev => prev + 1);
+										if (page + 1 <= totalPages) setPage((prev) => prev + 1);
 									}}>
 									<a className='page-link' href='#'>
 										<i className='fas fa-chevron-right'></i>

@@ -4,7 +4,7 @@ import logo from '../../../../assets/images/logos/logo.png';
 import useToggle from '../../../../hooks/useToggle';
 import StickyMenu from '../../../../lib/StickyMenu';
 import Navigation from '../../../helpers/Navigation';
-import MobileHeaderCom from '../../Mobile/MobileHeaderCom';
+import MobileHeaderCom from '../../Mobile';
 
 export default function HeaderHomeFour() {
 	const [searchBox, setValue] = useToggle(false);

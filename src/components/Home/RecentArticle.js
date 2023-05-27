@@ -1,67 +1,70 @@
 import React from 'react';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import { home } from '../../data/data';
+import BLOGS from '../../posts.json';
 
 export default function RecentArticle() {
 	return (
 		<section className='news-section pt-90 pb-90 rpb-70'>
 			<div className='container'>
 				<div className='row justify-content-center'>
-					<div className='col-xl-4 col-md-6'>
-						<div className='news-seciton-content mb-55 wow fadeInUp delay-0-2s'>
-							<div className='section-title mb-25'>
-								<span className='sub-title'>Recent Articles</span>
-								<h2>Get News & Blog</h2>
+					<div className='d-flex flex-column col-xl-4 col-md-6'>
+						<div className='d-flex flex-column flex-grow-1 justify-content-between news-section-content mb-55 wow fadeInUp delay-0-2s'>
+							<div>
+								<div className='section-title mb-25'>
+									<span className='sub-title'>{home.recentArticle.title}</span>
+									<h2>{home.recentArticle.heading}</h2>
+								</div>
+
+								<div className='section-title mb-25'>
+									<p>{home.recentArticle.description}</p>
+								</div>
+								<p>{home.recentArticle.details}</p>
 							</div>
-							<p>
-								Lorem ipsum dolor amet consectetur adips elit sed do eiusmod
-								tempor incididunt laboey dolore magna aliqua enim minim
-							</p>
-							<p>
-								On the other hand, we denounce righteous indignation and dislike
-								men who are beguiled and demoralized by the charms
-							</p>
-							<a href='/blog' className='theme-btn mt-15'>
-								view all news
-							</a>
+							<div>
+								<a href='/blog' className='theme-btn mt-15'>
+									{home.recentArticle.cta}
+								</a>
+							</div>
 						</div>
 					</div>
-					<div className='col-xl-4 col-md-6'>
-						<div className='news-item wow fadeInUp delay-0-4s'>
-							<div className='image'>
-								<img
-									src={require(`../../assets/images/news/news-2.jpg`)}
-									alt='News'
-								/>
-							</div>
-							<div className='news-content'>
-								<ul className='post-meta-item'>
-									<li>
-										<i className='fas fa-calendar-alt'></i>
-										<a href='#' rel='bookmark'>
-											22 December 2021
-										</a>
-									</li>
-									<li>
-										<i className='fas fa-tag'></i>
-										<a href='#'>it service</a>
-									</li>
-								</ul>
-								<h4>
-									<a href='/blog/blog-details'>
-										Keep Your Business Safe &amp; Ensure High Availability.
-									</a>
-								</h4>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisc ingelit sed do
-									eiusmod
-								</p>
+					<div className='d-flex flex-column col-xl-4 col-md-6'>
+						<div className='d-flex justify-content-between flex-column flex-grow-1 news-item wow fadeInUp delay-0-4s'>
+							<div className='d-flex flex-column flex-grow-1'>
+								<div className='image'>
+									<img src={BLOGS[0].thumbnail} alt='recent-article-1' />
+								</div>
+								<div className='flex-grow-1 news-content'>
+									<ul className='post-meta-item'>
+										<li>
+											<i className='fas fa-calendar-alt'></i>
+											<a href='#' rel='bookmark'>
+												{BLOGS[0].date}
+											</a>
+										</li>
+									</ul>
+									<h4>
+										<a href={`/blog/${BLOGS[0].slug}`}>{BLOGS[0].title}</a>
+									</h4>
+									<p>
+										{BLOGS[0].content.length > 120 ? (
+											<>
+												<ReactMarkdown>
+													{`${BLOGS[0].content.slice(0, 120)}...`}
+												</ReactMarkdown>
+												<a href={`/blog/${BLOGS[0].slug}`}>
+													{home.recentArticle.readMore}
+												</a>
+											</>
+										) : (
+											<ReactMarkdown>{BLOGS[0].content}</ReactMarkdown>
+										)}
+									</p>
+								</div>
 							</div>
 							<div className='news-author'>
-								<img
-									src={require(`../../assets/images/news/news-author-2.jpg`)}
-									alt='Authro'
-								/>
 								<span className='posted-by'>
-									By <a href='#'>Admin</a>
+									By <a href='#'>{BLOGS[0].author}</a>
 								</span>
 							</div>
 						</div>
@@ -75,22 +78,26 @@ export default function RecentArticle() {
 											<li>
 												<i className='fas fa-calendar-alt'></i>
 												<a href='#' rel='bookmark'>
-													22 December 2021
+													{BLOGS[1].date}
 												</a>
-											</li>
-											<li>
-												<i className='fas fa-tag'></i>
-												<a href='#'>it pro</a>
 											</li>
 										</ul>
 										<h4>
-											<a href='/blog/blog-details'>
-												Keep Your Business Safe &amp; Ensure High Availability.
-											</a>
+											<a href={`/blog/${BLOGS[1].slug}`}>{BLOGS[1].title}</a>
 										</h4>
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisc ingelit
-											sed do eiusmod
+											{BLOGS[1].content.length > 120 ? (
+												<>
+													<ReactMarkdown>
+														{`${BLOGS[1].content.slice(0, 120)}...`}
+													</ReactMarkdown>
+													<a href={`/blog/${BLOGS[1].slug}`}>
+														{home.recentArticle.readMore}
+													</a>
+												</>
+											) : (
+												<ReactMarkdown>{BLOGS[1].content}</ReactMarkdown>
+											)}
 										</p>
 									</div>
 								</div>
@@ -102,22 +109,26 @@ export default function RecentArticle() {
 											<li>
 												<i className='fas fa-calendar-alt'></i>
 												<a href='#' rel='bookmark'>
-													22 December 2021
+													{BLOGS[2].date}
 												</a>
-											</li>
-											<li>
-												<i className='fas fa-tag'></i>
-												<a href='#'>it pro</a>
 											</li>
 										</ul>
 										<h4>
-											<a href='/blog/blog-details'>
-												Keep Your Business Safe &amp; Ensure High Availability.
-											</a>
+											<a href={`/blog/${BLOGS[2].slug}`}>{BLOGS[2].title}</a>
 										</h4>
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisc ingelit
-											sed do eiusmod
+											{BLOGS[2].content.length > 120 ? (
+												<>
+													<ReactMarkdown>
+														{`${BLOGS[2].content.slice(0, 120)}...`}
+													</ReactMarkdown>
+													<a href={`/blog/${BLOGS[2].slug}`}>
+														{home.recentArticle.readMore}
+													</a>
+												</>
+											) : (
+												<ReactMarkdown>{BLOGS[2].content}</ReactMarkdown>
+											)}
 										</p>
 									</div>
 								</div>

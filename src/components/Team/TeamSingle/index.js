@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layouts from '../../helpers/Layouts';
 import MainSection from './MainSection';
 
 export default function TeamSingle() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<Layouts
 			pageTitle='Team Single'

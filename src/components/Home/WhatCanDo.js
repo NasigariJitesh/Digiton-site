@@ -1,68 +1,34 @@
 import React from 'react';
+import { home } from '../../data/data';
 
 export default function WhatCanDo() {
 	return (
 		<section className='what-we-do bg-lighter pt-115 rpt-95 pb-90 rpb-70'>
 			<div className='container'>
 				<div className='section-title text-center mb-65'>
-					<span className='sub-title'>What We Do</span>
-					<h2>
-						Preparing For Your Business Success <br />
-						With IT Solution
-					</h2>
+					<span className='sub-title'>{home.whatWeDo.title}</span>
+
+					<pre>
+						<h2>{home.whatWeDo.description}</h2>
+					</pre>
 				</div>
 				<div className='row justify-content-center'>
-					<div className='col-xl-4 col-md-6'>
-						<div className='feature-item wow fadeInUp delay-0-2s'>
-							<a href='/services/service-details' className='feature-btn'>
-								<i className='fas fa-long-arrow-alt-right'></i>
-							</a>
-							<div className='icon'>
-								<i className='flaticon flaticon-software-development'></i>
-							</div>
-							<div className='feature-content'>
-								<h5>IT Management</h5>
-								<p>
-									Lorem ipsum dolor sitmet consectetur adipiscing elit sed do
-									eiusmod
-								</p>
-							</div>
-						</div>
-					</div>
-					<div className='col-xl-4 col-md-6'>
-						<div className='feature-item wow fadeInUp delay-0-4s'>
-							<a href='/services/service-details' className='feature-btn'>
-								<i className='fas fa-long-arrow-alt-right'></i>
-							</a>
-							<div className='icon'>
-								<i className='flaticon flaticon-3d-printing'></i>
-							</div>
-							<div className='feature-content'>
-								<h5>Cloud Services</h5>
-								<p>
-									Lorem ipsum dolor sitmet consectetur adipiscing elit sed do
-									eiusmod
-								</p>
+					{home.whatWeDo.contents.map((content, index) => (
+						<div key={index} className='col-xl-4 col-md-6'>
+							<div className='feature-item wow fadeInUp delay-0-2s'>
+								<a href={content.link} className='feature-btn'>
+									<i className='fas fa-long-arrow-alt-right'></i>
+								</a>
+								<div className='icon'>
+									<i className={content.iconName} />
+								</div>
+								<div className='feature-content'>
+									<h5>{content.title}</h5>
+									<p>{content.description}</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div className='col-xl-4 col-md-6'>
-						<div className='feature-item wow fadeInUp delay-0-6s'>
-							<a href='/services/service-details' className='feature-btn'>
-								<i className='fas fa-long-arrow-alt-right'></i>
-							</a>
-							<div className='icon'>
-								<i className='flaticon flaticon-web-1'></i>
-							</div>
-							<div className='feature-content'>
-								<h5>Machine Learning</h5>
-								<p>
-									Lorem ipsum dolor sitmet consectetur adipiscing elit sed do
-									eiusmod
-								</p>
-							</div>
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</section>

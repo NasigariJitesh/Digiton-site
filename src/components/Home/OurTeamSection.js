@@ -1,110 +1,76 @@
+/* eslint-disable no-nested-ternary */
 import React from 'react';
+import { team } from '../../data/data';
 
-export default function OurTeamSection({ className }) {
+export default function OurTeamSection() {
 	return (
-		<section className={`team-section-three pb-50 rpb-30 ${className || ''}`}>
+		<section className='team-section-three pb-50 rpb-30'>
 			<div className='container'>
-				<div className='section-title-with-btn mb-60'>
-					<div className='section-title'>
-						<span className='sub-title'>Meet Our Team</span>
-						<h2>Expert Team Member</h2>
-					</div>
-					<a href='/team-one' className='theme-btn  mt-15'>
-						view all member
-					</a>
-				</div>
-				<div className='row'>
-					<div className='col-lg-4 col-sm-6'>
-						<div className='team-member-three wow fadeInUp delay-0-2s'>
-							<div className='image'>
-								<img
-									src={require(`../../assets/images/team/team-three-1.jpg`)}
-									alt='Team Member'
-								/>
+				{team.sections.map((section, index) =>
+					window.innerWidth > 576 ? (
+						index % 2 === 0 ? (
+							<div key={index} className='row align-items-center  py-40'>
+								<div className='col-md-8'>
+									<div className='about-six-content rmr-0 wow fadeInLeft delay-0-2s'>
+										<div className='section-title mb-35'>
+											<h2>{section.heading}</h2>
+										</div>
+										<div className='service-item-six'>
+											<div className='service-content'>
+												<p>{section.description}</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className='col-md-4'>
+									<div className='about-shape rml-0 pr-30 wow fadeInRight delay-0-2s'>
+										<img src={section.image} alt='About' />
+									</div>
+								</div>
 							</div>
-							<div className='member-designation'>
-								<h3>
-									<a href='/team/team-profile'>Charles P. Johnson</a>
-								</h3>
-								<span>CEO & Founder</span>
-								<div className='social-style-a'>
-									<a href='http://facebook.com'>
-										<i className='fab fa-facebook-f'></i>
-									</a>
-									<a href='http://twitter.com'>
-										<i className='fab fa-twitter'></i>
-									</a>
-									<a href='https://www.instagram.com/'>
-										<i className='fab fa-instagram'></i>
-									</a>
-									<a href='https://www.pinterest.com/'>
-										<i className='fab fa-pinterest-p'></i>
-									</a>
+						) : (
+							<div key={index} className='row align-items-center py-40'>
+								<div className='col-md-4'>
+									<div className='about-shape  lmr-0 pr-30 wow fadeInLeft delay-0-2s'>
+										<img src={section.image} alt='About' />
+									</div>
+								</div>
+								<div className='col-md-8'>
+									<div className='about-six-content  rmr-0 wow fadeInRight delay-0-2s'>
+										<div className='section-title mb-35'>
+											<h2>{section.heading}</h2>
+										</div>
+										<div className='service-item-six'>
+											<div className='service-content'>
+												<p>{section.description}</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						)
+					) : (
+						<div key={index} className='row align-items-center py-40'>
+							<div className='col-md-4'>
+								<div className='about-shape  lmr-0 pr-30 wow fadeInLeft delay-0-2s'>
+									<img src={section.image} alt='About' />
+								</div>
+							</div>
+							<div className='col-md-8'>
+								<div className='about-six-content  rmr-0 wow fadeInRight delay-0-2s'>
+									<div className='section-title mb-35'>
+										<h2>{section.heading}</h2>
+									</div>
+									<div className='service-item-six'>
+										<div className='service-content'>
+											<p>{section.description}</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div className='col-lg-4 col-sm-6'>
-						<div className='team-member-three wow fadeInUp delay-0-4s'>
-							<div className='image'>
-								<img
-									src={require(`../../assets/images/team/team-three-2.jpg`)}
-									alt='Team Member'
-								/>
-							</div>
-							<div className='member-designation'>
-								<h3>
-									<a href='/team/team-profile'>Kenneth B. Jones</a>
-								</h3>
-								<span>Web Developer</span>
-								<div className='social-style-a'>
-									<a href='http://facebook.com'>
-										<i className='fab fa-facebook-f'></i>
-									</a>
-									<a href='http://twitter.com'>
-										<i className='fab fa-twitter'></i>
-									</a>
-									<a href='https://www.instagram.com/'>
-										<i className='fab fa-instagram'></i>
-									</a>
-									<a href='https://www.pinterest.com/'>
-										<i className='fab fa-pinterest-p'></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className='col-lg-4 col-sm-6'>
-						<div className='team-member-three wow fadeInUp delay-0-6s'>
-							<div className='image'>
-								<img
-									src={require(`../../assets/images/team/team-three-3.jpg`)}
-									alt='Team Member'
-								/>
-							</div>
-							<div className='member-designation'>
-								<h3>
-									<a href='/team/team-profile'>Marcelo L. Cameron</a>
-								</h3>
-								<span>Graphics Designer</span>
-								<div className='social-style-a'>
-									<a href='http://facebook.com'>
-										<i className='fab fa-facebook-f'></i>
-									</a>
-									<a href='http://twitter.com'>
-										<i className='fab fa-twitter'></i>
-									</a>
-									<a href='https://www.instagram.com/'>
-										<i className='fab fa-instagram'></i>
-									</a>
-									<a href='https://www.pinterest.com/'>
-										<i className='fab fa-pinterest-p'></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+					)
+				)}
 			</div>
 		</section>
 	);
