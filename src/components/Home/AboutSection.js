@@ -2,7 +2,7 @@ import React from 'react';
 import aboutCircleDots from '../../assets/images/about/about-circle-dots.png';
 import aboutThumbTwo from '../../assets/images/about/about-four-2.jpg';
 import aboutThumb from '../../assets/images/about/about-four.jpg';
-import logoCircle from '../../assets/images/logos/logo-circle.png';
+import logo from '../../assets/images/logos/logo.png';
 import { home } from '../../data/data';
 
 export default function AboutSection() {
@@ -37,7 +37,7 @@ export default function AboutSection() {
 								<div className='col-6'>
 									<img
 										className='bg-circle-dtos mb-35 d-block mx-auto'
-										src={logoCircle}
+										src={logo}
 										alt='Logo'
 									/>
 									<img src={aboutThumbTwo} alt='About' />

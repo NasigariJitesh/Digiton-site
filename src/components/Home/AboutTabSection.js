@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import background from '../../assets/images/counter/counter-bg.jpg';
+import background from '../../assets/images/counter/counter-bg.png';
 import { home } from '../../data/data';
 import CounterUp from '../helpers/CounterUp';
 import DataIteration from '../helpers/DataIteration';

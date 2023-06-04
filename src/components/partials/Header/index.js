@@ -13,7 +13,7 @@ export default function Header() {
 		<>
 			<MobileHeader logo={logo2} />
 			<header className='main-header header-style'>
-				<div className='header-upper text-white'>
+				<div className='header-upper text-black'>
 					<div className='container clearfix'>
 						<div className='header-inner d-flex align-items-center'>
 							<div className='logo-outer'>

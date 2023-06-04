@@ -47,16 +47,16 @@
 /* navigation */
 
 .restly-header-main-menu ul > li > a {
-	color: #fff;
+	color: #231f20;
 }
 .restly-header-main-menu ul > li .sub-menu li a {
-	color: #0e1133;
+	color: #231f20;
 }
 .restly-header-main-menu ul > li > a {
-	color: #fff;
+	color: #231f20;
 }
 .restly-header-main-menu ul > li .sub-menu li a {
-	color: #0e1133;
+	color: #231f20;
 }
 .restly-header-main-menu ul > li > a:hover {
 	color: #801f82;
@@ -65,7 +65,7 @@
 	color: #9b2cfa;
 }
 .restly-header-main-menu ul > li > a {
-	color: #fff;
+	color: #231f20;
 }
 .restly-header-main-menu ul > li > a:hover {
 	color: #2b70fa;
@@ -376,7 +376,7 @@
 	padding: 34px 25px;
 }
 .main-menu.navbar-expand-lg .restly-header-main-menu > ul > li > a {
-	color: #f8f8f8;
+	color: #231f20;
 }
 
 .main-menu.navbar-expand-lg
