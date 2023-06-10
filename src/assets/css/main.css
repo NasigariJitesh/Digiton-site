@@ -440,7 +440,6 @@ a.theme-btn.style-b:hover {
 	margin-right: 7px;
 	width: 40px;
 	height: 40px;
-	background: #162b3b;
 	line-height: 40px;
 	border-radius: 50%;
 	text-align: center;
@@ -450,7 +449,7 @@ a.theme-btn.style-b:hover {
 }
 .social-style-b a:hover {
 	opacity: 1;
-	background: #ffb81a;
+	color: #fdd179;
 }
 
 /*** Preloader style ***/
@@ -5482,7 +5481,7 @@ h6,
 	margin-right: 20px;
 	width: 60px;
 	height: 60px;
-	background: #2f97f71f;
+	background: #ffb81a1f;
 	line-height: 60px;
 	border-radius: 50%;
 	text-align: center;
@@ -8569,7 +8568,7 @@ blockquote .author {
 }
 .footer-style .social-style-b a:hover {
 	color: #f8f8f8;
-	background: #ffb81a;
+	background: #fdd179;
 }
 
 .footer-style .list-style-c li:before {

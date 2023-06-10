@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutCircleDots from '../../assets/images/about/about-circle-dots.png';
-import aboutThumbTwo from '../../assets/images/about/about-four-2.jpg';
-import aboutThumb from '../../assets/images/about/about-four.jpg';
+import aboutOne from '../../assets/images/about/aboutOne.svg';
+import aboutTwo from '../../assets/images/about/aboutTwo.svg';
 import logo from '../../assets/images/logos/logo.png';
 import { home } from '../../data/data';
 
@@ -27,7 +27,7 @@ export default function AboutSection() {
 						<div className='about-images text-center wow fadeInRight delay-0-2s'>
 							<div className='row'>
 								<div className='col-6'>
-									<img src={aboutThumb} alt='About' />
+									<img src={aboutOne} alt='About' />
 									<img
 										className='about-bg-circle d-block mx-auto'
 										src={aboutCircleDots}
@@ -40,7 +40,7 @@ export default function AboutSection() {
 										src={logo}
 										alt='Logo'
 									/>
-									<img src={aboutThumbTwo} alt='About' />
+									<img src={aboutTwo} alt='About' />
 								</div>
 							</div>
 						</div>

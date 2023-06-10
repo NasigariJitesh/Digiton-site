@@ -1,9 +1,20 @@
-import aboutThumb from '../assets/images/about/about-six.png';
-import aboutTab from '../assets/images/about/about-tab.png';
-import aboutTabTwo from '../assets/images/about/about.png';
+import aboutUs from '../assets/images/about/about-us.svg';
+import cloudSolutionAboutTab from '../assets/images/about/cloud-solution.svg';
+import itManagementAboutTab from '../assets/images/about/it-management.svg';
+import ourExpertise from '../assets/images/about/our-expertise.svg';
+import ourMission from '../assets/images/about/our-mission.svg';
+import ourTeam from '../assets/images/about/our-team.svg';
+import ourValues from '../assets/images/about/our-values.svg';
+import ourVision from '../assets/images/about/our-vision.svg';
+import productDevelopmentAboutTab from '../assets/images/about/product-development.svg';
+import staffingSolutionsAboutTab from '../assets/images/about/staffing-solutions.svg';
 import portfolioImage from '../assets/images/gallery/gallery-two-1.jpg';
 import logo from '../assets/images/logos/logo.png';
 import serviceDetailsImage from '../assets/images/services/service-details.jpg';
+import customSolution from '../assets/images/team/custom-solution.svg';
+import partner from '../assets/images/team/partner.svg';
+import qualityService from '../assets/images/team/quality-service.svg';
+import reliableSupport from '../assets/images/team/reliable-support.svg';
 
 export const home = {
 	banner: {
@@ -52,7 +63,7 @@ export const home = {
 				uniqKey: '_staffing_solutions',
 				name: 'Staffing Solutions',
 				icon: 'flaticon flaticon-software-development',
-				thumb: aboutTab,
+				thumb: staffingSolutionsAboutTab,
 				heading: 'Expertise in Cutting-Edge Staffing Solutions',
 				description:
 					'We provide comprehensive staffing management services, allowing businesses to maximize the performance and capacity without any hassle.',
@@ -68,7 +79,7 @@ export const home = {
 				uniqKey: '_cloud_service',
 				name: 'Cloud Service',
 				icon: 'flaticon flaticon-cloud-network-1',
-				thumb: aboutTabTwo,
+				thumb: cloudSolutionAboutTab,
 				heading: `Make The Most Of The Cloud's Potential`,
 				description:
 					'Our team of certified professionals is available to help you get the most out of your cloud investment and ensure you are always up-to-date with industry trends.',
@@ -84,7 +95,7 @@ export const home = {
 				uniqKey: '_product_dev',
 				name: 'Product Development',
 				icon: 'flaticon flaticon-web-development-4',
-				thumb: aboutTab,
+				thumb: productDevelopmentAboutTab,
 				heading: 'Get Intuitive And User-Friendly Product Development',
 				description:
 					'Whatever your product development needs may be, our experts can provide you with a custom solution designed to take your business goals to the next level.',
@@ -98,9 +109,9 @@ export const home = {
 			{
 				id: 4,
 				uniqKey: '_it_managment',
-				name: 'It Management',
+				name: 'IT Management',
 				icon: 'flaticon flaticon-web-maintenance',
-				thumb: aboutTabTwo,
+				thumb: itManagementAboutTab,
 				heading: 'Keep Up With The Ever-Evolving Technological Landscape',
 				description:
 					'We provide comprehensive IT management services to help businesses maximize their	technology investments.',
@@ -147,37 +158,37 @@ export const about = {
 			heading: 'About Us',
 			description:
 				'At Digiton Solutions, we understand the importance of staying ahead of the competition in today’s fast-moving digital landscape. As a global technology services and staffing firm, we collaborate with our clients to enable them to reach their goals faster and achieve success. Our focus is on providing customized solutions that embrace diverse perspectives, invite new ideas and leverage leading-edge technologies – empowering businesses for growth and positive change. We are also highly experienced in tech talent acquisition for fulfilling all of your needs in technology staffing.',
-			image: aboutThumb,
+			image: aboutUs,
 		},
 		{
 			heading: 'Our Expertise',
 			description:
 				'Our highly skilled team offers expertise across key areas, including Cyber Security, Deep Tech (AI/ML), Data Analytics, Oracle Cloud (SaaS) Services, Staffing Services, DevOps, Data Science, and Identity &; Access Management (IAM). We specialize in Identity & Access Management by developing accessible road maps for building a sustainable access management strategy, offering guidance through the process of platform transformation, as well as managing complex IAM operations while optimizing resource utilization.',
-			image: aboutThumb,
+			image: ourExpertise,
 		},
 		{
 			heading: 'Our Mission',
 			description:
 				'At Digiton Solutions, our mission is to accelerate our customer’s digital transformation journey through pioneering innovative solutions tailored to fit their individual needs. With our collective emphasis on reliability, transparency and sustainability well, positioned resources can offer assurance that they will result in long-term rewarding rewards for all involved parties.',
-			image: aboutThumb,
+			image: ourMission,
 		},
 		{
 			heading: 'Our Vision',
 			description:
 				'Our vision is to empower businesses so they can remain competitive throughout their digital transformations - accelerated by the right resources and tools necessary to ensure sustainable growth over time.',
-			image: aboutThumb,
+			image: ourVision,
 		},
 		{
 			heading: 'Our Values',
 			description:
 				'We believe passionately at Digiton Solutions towards three core values which are loyalty towards each other as a team, commitment toward excellence for our customers and assurance over effectiveness when working with us as an end-to-end service provider. Specifically, these translates into.',
-			image: aboutThumb,
+			image: ourValues,
 		},
 		{
 			heading: 'Our Team',
 			description:
 				'At Digiton Solutions, our staff are dedicated professionals who stay abreast in all relevant updated technology developments while emphasizing the highest competency standard demanded within the industry standards bars size whether international, regional or local demands be it part of cyber security dynamics, data science related differences or tech staffing background needed specially tailored offices.',
-			image: aboutThumb,
+			image: ourTeam,
 		},
 	],
 };
@@ -443,37 +454,37 @@ export const team = {
 			heading: 'Our Expert Team Can Help You With All Your IT Staffing Needs',
 			description:
 				'At Digiton, we pride ourselves on having a team of highly skilled professionals who provide staffing solutions and IT managed services to businesses of all sizes. Our team members are carefully chosen for their expertise, experience, and dedication to delivering the best possible service to our clients.',
-			image: aboutThumb,
+			image: ourTeam,
 		},
 		{
 			heading: 'Unmatched Expertise',
 			description:
 				'Our team includes experts in staffing and IT management who have extensive experience in their fields. From recruitment to IT support, our team is equipped with the knowledge and skills to provide you with tailor-made solutions that will help your business thrive.',
-			image: aboutThumb,
+			image: ourExpertise,
 		},
 		{
 			heading: 'Customized Solutions',
 			description:
 				'We understand that every business is unique, which is why we work closely with our clients to develop customized solutions to meet their specific staffing and IT requirements. Our team takes the time to understand your business goals, challenges, and opportunities, and works with you to design solutions that fit your needs and budget.',
-			image: aboutThumb,
+			image: customSolution,
 		},
 		{
 			heading: 'Quality Service',
 			description:
 				'At Digiton, we believe in providing quality service to our clients. That’s why we hire only the best in the business. Our team members are not only highly skilled professionals, but they are also passionate about what they do. They take their work seriously and are committed to delivering solutions that exceed your expectations.',
-			image: aboutThumb,
+			image: qualityService,
 		},
 		{
 			heading: 'Reliable Support',
 			description:
 				'We understand that technology is critical to your business, and our team is dedicated to providing reliable IT support that ensures your systems run smoothly at all times. Whether it’s troubleshooting technical issues or providing ongoing maintenance, our team is available to provide you with the support you need to keep your business running smoothly.',
-			image: aboutThumb,
+			image: reliableSupport,
 		},
 		{
 			heading: 'Partner With Us',
 			description:
 				'At Digiton, we believe that our clients are our partners, and we are committed to working with you to achieve your business goals. We are passionate about what we do and are excited to help you take your business to new heights. Let our team of experts help you with all your staffing and IT needs, and experience the difference that quality service can make.',
-			image: aboutThumb,
+			image: partner,
 		},
 	],
 };

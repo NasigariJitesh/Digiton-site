@@ -1,6 +1,6 @@
 import React from 'react';
+import background from '../../assets/images/hero/banner.jpg';
 import shape from '../../assets/images/hero/hero-four-shape.png';
-import background from '../../assets/images/hero/hero-four.jpg';
 import { home } from '../../data/data';
 
 export default function Hero() {
