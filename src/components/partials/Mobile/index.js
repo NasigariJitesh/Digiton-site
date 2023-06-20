@@ -11,7 +11,7 @@ export default function MobileHeader({ logo, className }) {
 					className='d-flex justify-content-between'
 					style={{ alignItems: 'center', height: '100%' }}>
 					<a href='/' className='logo-area'>
-						<img src={logo} alt='' />
+						<img src={logo} alt='' height={120} />
 					</a>
 					<div className='button-area'>
 						<span onClick={setValue.toggle}>

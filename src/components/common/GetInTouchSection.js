@@ -91,8 +91,8 @@ export default function GetInTouchSection() {
 							</div>
 						</div>
 						<div className='col-lg-5'>
-							<div className='contact-image-number style-two bgs-cover overlay wow fadeInUp delay-0-4s animated'>
-								<div className='contact-informations text-white'>
+							<div className='contact-image-number style-two bg-lighter overlay wow fadeInUp delay-0-4s animated'>
+								<div className='contact-informations text-black'>
 									<h3>Don't hesitate to contact us</h3>
 									<ul className='contact-info'>
 										<li>

@@ -13,7 +13,7 @@ export default function AboutTabSection() {
 	return (
 		<section
 			id='about-tab-section'
-			className='about-tab-section bg-yellow text-black pb-120 rpb-100'>
+			className='about-tab-section bg-lighter text-black pb-120 rpb-100'>
 			<div className='container'>
 				<div
 					className='fact-counter-inner br-5 px-25 pt-80 pb-30 text-black text-center'

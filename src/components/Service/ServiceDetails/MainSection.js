@@ -28,10 +28,10 @@ export default function MainSection() {
 					</div>
 					<div className='col-lg-8'>
 						<div className='service-details-content wow fadeInRight delay-0-2s'>
-							<div className='image mb-40'>
+							{/* <div className='image mb-40'>
 								<img src={details.image} alt='Service Details' />
-							</div>
-							<h2>{details.title}</h2>
+							</div> */}
+							<h2 style={{ fontWeight: 'bold' }}>{details.title}</h2>
 							<p>{details.description}</p>
 							<ul className='list-style-c pt-15 pb-30'>
 								{details.sections.map((section, index) => (

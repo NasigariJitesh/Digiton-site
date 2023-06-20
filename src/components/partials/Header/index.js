@@ -19,7 +19,7 @@ export default function Header() {
 							<div className='logo-outer'>
 								<div className='logo'>
 									<a href='/'>
-										<img src={logo} alt='Logo' title='Logo' height={70} />
+										<img src={logo} alt='Logo' title='Logo' height={120} />
 									</a>
 								</div>
 							</div>

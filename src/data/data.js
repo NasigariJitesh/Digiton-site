@@ -8,8 +8,12 @@ import ourValues from '../assets/images/about/our-values.svg';
 import ourVision from '../assets/images/about/our-vision.svg';
 import productDevelopmentAboutTab from '../assets/images/about/product-development.svg';
 import staffingSolutionsAboutTab from '../assets/images/about/staffing-solutions.svg';
-import portfolioImage from '../assets/images/gallery/gallery-two-1.jpg';
 import logo from '../assets/images/logos/logo.png';
+import banking from '../assets/images/portfolio/banking.jpg';
+import healthCare from '../assets/images/portfolio/health-care.jpg';
+import hospitality from '../assets/images/portfolio/hospitality.jpg';
+import retail from '../assets/images/portfolio/retail.jpg';
+import logistics from '../assets/images/portfolio/warehouse-logistics.jpg';
 import serviceDetailsImage from '../assets/images/services/service-details.jpg';
 import customSolution from '../assets/images/team/custom-solution.svg';
 import partner from '../assets/images/team/partner.svg';
@@ -417,31 +421,31 @@ export const portfolio = {
 			heading: 'Healthcare Industry',
 			description:
 				'Digiton has assisted a number of healthcare organizations with their staffing needs. We have provided skilled professionals, such as nurses, doctors, and administrative staff, who have helped them deal with staffing shortages and maintain service levels. We have also provided technology services that have enabled them to streamline their processes, automate their workflows, and improve their overall efficiency.',
-			image: portfolioImage,
+			image: healthCare,
 		},
 		{
 			heading: 'Retail Industry',
 			description:
 				'We have also worked with retail organizations to help them optimize their staffing requirements. We have provided them with temporary staff during peak seasons, as well as permanent staff for key positions. Additionally, we have helped them with IT managed services, such as developing and implementing a robust point-of-sale system, which has enabled them to improve their customer experience and grow their sales.',
-			image: portfolioImage,
+			image: retail,
 		},
 		{
 			heading: 'Logistics and Warehousing Industry',
 			description:
 				'Digiton has provided staffing solutions to logistics and warehousing companies. We have assisted them in recruiting and retaining employees in various roles, including freight handlers, forklift operators, and warehouse supervisors. Moreover, we have helped them set up robust IT systems such as a warehouse management system that has enabled them to improve their inventory management and distribution process.',
-			image: portfolioImage,
+			image: logistics,
 		},
 		{
 			heading: 'Hospitality Industry',
 			description:
 				'The hospitality industry requires skilled staff to provide the best customer experience. Digiton has successfully provided hospitality staffing solutions to hotels and resorts around the country. We have provided them with experienced professionals in various roles, including front desk executives, housekeeping staff, and chefs. Our staff has helped them to maintain high levels of customer satisfaction, which is critical in this industry.',
-			image: portfolioImage,
+			image: hospitality,
 		},
 		{
 			heading: 'Banking and Finance Industry',
 			description:
 				'We have worked with several banking and finance organizations in providing IT managed services that comply with regulatory policies. We have implemented IT solutions to improve their customer experience, such as a secure online banking system that enables them to provide customers with quick and easy access to their accounts while ensuring the integrity of the data.',
-			image: portfolioImage,
+			image: banking,
 		},
 	],
 	footnote:

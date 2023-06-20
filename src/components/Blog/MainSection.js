@@ -17,10 +17,7 @@ export default function MainSection() {
 							{currentPageBlogs.map((blog) => (
 								<div className='blog-standard-item wow fadeInUp delay-0-2s'>
 									<div className='image'>
-										<img
-											src={require(`../../assets/images/news/blog-standard-1.jpg`)}
-											alt='Blog Standard'
-										/>
+										<img src={blog.thumbnail} alt='Blog Standard' />
 									</div>
 									<div className='blog-header'>
 										<ul className='post-meta-item mr-15'>
@@ -56,15 +53,6 @@ export default function MainSection() {
 									</a>
 								</div>
 							))}
-
-							<div className='blog-standard-item quote-blog wow fadeInUp delay-0-2s'>
-								<h3>
-									{/* <a href='/blog/blog-details'> */}
-									Meet Smashing Book New Frontiers In Web For Better Enge Tools
-									Techniques.
-									{/* </a> */}
-								</h3>
-							</div>
 
 							<ul className='pagination flex-wrap'>
 								<li
@@ -123,10 +111,7 @@ export default function MainSection() {
 							<div className='widget widget-call-action wow fadeInUp delay-0-2s'>
 								<div className='call-action-widget'>
 									<h2>Work Together</h2>
-									<p>
-										Bur wemust ipsum dolor sit amet consectetur adipisicing elit
-										sed eiusmod tempor incididunt ut labore
-									</p>
+
 									<a className='theme-btn style-b btn-circle' href='/contact'>
 										Contact Now <i className='fas fa-angle-double-right'></i>
 									</a>

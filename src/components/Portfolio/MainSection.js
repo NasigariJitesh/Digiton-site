@@ -11,9 +11,9 @@ export default function MainSection() {
 				</div>
 				<div className='row text-black justify-content-center'>
 					{portfolio.items.map((item, index) => (
-						<div key={index} className='col-xl-4 col-md-6'>
+						<div key={index} className='col-md-6'>
 							<div className='gallery-item style-a wow fadeInUp delay-0-2s'>
-								<img src={item.image} alt='Gallery' />
+								<img src={item.image} height={350} alt='Gallery' />
 								<div className='gallery-content'>
 									<div className='gallery-content-inner'>
 										<h5>{item.heading}</h5>

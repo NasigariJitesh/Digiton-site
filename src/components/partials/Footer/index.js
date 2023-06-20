@@ -1,6 +1,6 @@
 import React from 'react';
 import background from '../../../assets/images/footer/footer-bg.png';
-import { footer, signUpForm } from '../../../data/data';
+import { footer } from '../../../data/data';
 
 import BLOGS from '../../../posts.json';
 
@@ -10,7 +10,7 @@ export default function FooterHomeFour() {
 		<footer
 			className='main-footer footer-style bgs-cover bg-lighter'
 			style={{ backgroundImage: `url(${background})` }}>
-			<div className='footer-sign-up'>
+			{/* <div className='footer-sign-up'>
 				<div className='container'>
 					<div className='footer-signup-inner bg-yellow pt-40 pb-25 px-60'>
 						<div className='row align-items-center justify-content-between'>
@@ -30,9 +30,9 @@ export default function FooterHomeFour() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 
-			<div className='container'>
+			<div className='container pt-60'>
 				<div className='row'>
 					<div className='col-lg-3 col-sm-6'>
 						<div className='footer-widget about-widget'>
@@ -124,27 +124,13 @@ export default function FooterHomeFour() {
 					</div>
 				</div>
 			</div>
-			<div className='copyright-area bg-black text-white mt-30'>
+			{/* <div className='copyright-area bg-lighter text-black mt-30'>
 				<div className='container'>
 					<div className='copyright-inner pt-15'>
-						<div className='social-style-a mb-10'>
-							<a href='http://facebook.com'>
-								<i className='fab fa-facebook-f'></i>
-							</a>
-							<a href='http://twitter.com'>
-								<i className='fab fa-twitter'></i>
-							</a>
-							<a href='https://www.instagram.com/'>
-								<i className='fab fa-instagram'></i>
-							</a>
-							<a href='https://www.pinterest.com/'>
-								<i className='fab fa-pinterest-p'></i>
-							</a>
-						</div>
-						<p>copyright 2022 Restly All Rights Reserved.</p>
+						<p>copyright 2023 Digiton All Rights Reserved.</p>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</footer>
 	);
 }
