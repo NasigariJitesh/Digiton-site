@@ -14,7 +14,7 @@ export default function GetInTouchSection() {
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			body: new URLSearchParams(formData).toString(),
 		})
-			.then(() => navigate('/follow-up'))
+			.then(() => navigate('/success'))
 			.catch((error) => alert(error));
 	};
 	return (
@@ -31,7 +31,7 @@ export default function GetInTouchSection() {
 									id='contact-form'
 									className='contact-form'
 									name='get-in-touch-form'
-									action='/success'
+									onSubmit={submitHandler}
 									method='post'>
 									<input
 										type='hidden'
