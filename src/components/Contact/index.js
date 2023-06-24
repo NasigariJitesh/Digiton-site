@@ -53,12 +53,9 @@ export default function Contact() {
 									id='comment-form'
 									className='comment-form mt-35'
 									name='contact-form'
+									data-netlify='true'
 									method='post'>
-									<input
-										type='hidden'
-										name='contact-form'
-										value='contact-form'
-									/>
+									<input type='hidden' name='contact' value='contact-form' />
 									<div className='row clearfix justify-content-center'>
 										<div className='col-sm-6'>
 											<div className='form-group'>

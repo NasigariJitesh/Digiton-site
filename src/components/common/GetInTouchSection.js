@@ -15,10 +15,11 @@ export default function GetInTouchSection() {
 									id='contact-form'
 									className='contact-form'
 									name='get-in-touch-form'
+									data-netlify='true'
 									method='post'>
 									<input
 										type='hidden'
-										name='get-in-touch-form'
+										name='get-in-touch'
 										value='get-in-touch-form'
 									/>
 									<div className='row'>
