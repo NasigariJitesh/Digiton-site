@@ -1,6 +1,8 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useParams } from 'react-router-dom';
+import { truncate } from '../../../data/functions';
 import BLOGS from '../../../posts.json';
 
 export default function MainSection() {
@@ -12,6 +14,13 @@ export default function MainSection() {
 
 	return (
 		<section className='blog-details-area bg-lighter'>
+			<Helmet>
+				<title>{blog.title} - Digiton Solutions</title>
+				<meta
+					name='description'
+					content={`${blog.title} - Digiton Solutions`}
+				/>
+			</Helmet>
 			<div className='container'>
 				<div className='row'>
 					<div className='col-lg-8'>
@@ -40,7 +49,7 @@ export default function MainSection() {
 										<a
 											href={`/blog/${BLOGS[currentIndex - 1].slug}`}
 											className='next-prev-blog'>
-											<h4>{BLOGS[currentIndex - 1].title}</h4>
+											<h4>{truncate(BLOGS[currentIndex - 1].title, 25)}</h4>
 										</a>
 									) : null}
 								</div>
@@ -49,7 +58,7 @@ export default function MainSection() {
 										<a
 											href={`/blog/${BLOGS[currentIndex + 1].slug}`}
 											className='next-prev-blog'>
-											<h4>{BLOGS[currentIndex + 1].title}</h4>
+											<h4>{truncate(BLOGS[currentIndex + 1].title, 25)}</h4>
 										</a>
 									) : null}
 								</div>

@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { services } from '../../data/data';
 
 function ServiceSection() {
 	return (
 		<section className='services-section pt-120 rpt-100 pb-90 rpb-70'>
+			<Helmet>
+				<title>Services - Digiton Solutions</title>
+				<meta name='description' content='Services - Digiton Solutions' />
+			</Helmet>
 			<div className='container'>
 				<div className='row'>
 					{services.home.services.map((service) => (

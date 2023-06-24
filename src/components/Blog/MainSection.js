@@ -1,5 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import ReactMarkdown from 'react-markdown';
 import BLOGS from '../../posts.json';
 
@@ -10,12 +11,18 @@ export default function MainSection() {
 
 	return (
 		<section className='z-1 blog-page-area bg-lighter'>
+			<Helmet>
+				<title>Blog - Digiton Solutions</title>
+				<meta name='description' content='Blog - Digiton Solutions' />
+			</Helmet>
 			<div className='container'>
 				<div className='row'>
 					<div className='col-lg-8'>
 						<div className='blog-standard-content pt-120 rpt-100 pb-110 rpb-90 pr-15 rpr-0'>
 							{currentPageBlogs.map((blog) => (
-								<div className='blog-standard-item wow fadeInUp delay-0-2s'>
+								<div
+									key={blog.id}
+									className='blog-standard-item wow fadeInUp delay-0-2s'>
 									<div className='image'>
 										<img src={blog.thumbnail} alt='Blog Standard' />
 									</div>
@@ -30,7 +37,7 @@ export default function MainSection() {
 												{blog.date}
 											</li>
 										</ul>
-										<div className='social-style-a'>
+										{/* <div className='social-style-a'>
 											<span>Share Now</span>
 											<a href='http://facebook.com'>
 												<i className='fab fa-facebook-f'></i>
@@ -41,14 +48,14 @@ export default function MainSection() {
 											<a href='https://google.com/'>
 												<i className='fab fa-google-plus-g'></i>
 											</a>
-										</div>
+										</div> */}
 									</div>
 									<h3>
-										<a href='/blog/blog-details'>{blog.title}</a>
+										<a href={`/blog/${blog.slug}`}>{blog.title}</a>
 									</h3>
 									<ReactMarkdown skipHtml>{blog.content}</ReactMarkdown>
 
-									<a href='/blog/blog-details' className='theme-btn'>
+									<a href={`/blog/${blog.slug}`} className='theme-btn'>
 										Read More
 									</a>
 								</div>

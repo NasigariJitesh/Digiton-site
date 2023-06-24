@@ -1,15 +1,20 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { about } from '../../data/data';
 
 export default function MainSection() {
 	return (
 		<section className='about-section-six py-120 rpb-10'>
+			<Helmet>
+				<title>About - Digiton Solutions</title>
+				<meta name='description' content='About - Digiton Solutions' />
+			</Helmet>
 			<div className='container'>
 				{about.sections.map((section, index) =>
 					window.innerWidth > 576 ? (
 						index % 2 === 0 ? (
-							<div className='row align-items-center py-40'>
+							<div key={index} className='row align-items-center py-40'>
 								<div className='col-md-8'>
 									<div className='about-six-content mr-65 rmr-0 wow fadeInLeft delay-0-2s'>
 										<div className='section-title mb-35'>
@@ -29,7 +34,7 @@ export default function MainSection() {
 								</div>
 							</div>
 						) : (
-							<div className='row align-items-center py-40'>
+							<div key={index} className='row align-items-center py-40'>
 								<div className='col-md-4'>
 									<div className='about-shape mr-50 lmr-0 pr-30 wow fadeInLeft delay-0-2s'>
 										<img src={section.image} alt='About' />

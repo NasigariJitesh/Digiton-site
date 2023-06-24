@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import GetInTouchSection from '../../common/GetInTouchSection';
 import Layouts from '../../helpers/Layouts';
 import MainSection from './MainSection';
 
@@ -18,6 +19,7 @@ export default function ServiceDetails() {
 				{ name: slug, path: `/services/${slug}` },
 			]}>
 			<MainSection />
+			<GetInTouchSection />
 		</Layouts>
 	);
 }

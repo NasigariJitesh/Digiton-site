@@ -14,7 +14,6 @@ import healthCare from '../assets/images/portfolio/health-care.jpg';
 import hospitality from '../assets/images/portfolio/hospitality.jpg';
 import retail from '../assets/images/portfolio/retail.jpg';
 import logistics from '../assets/images/portfolio/warehouse-logistics.jpg';
-import serviceDetailsImage from '../assets/images/services/service-details.jpg';
 import customSolution from '../assets/images/team/custom-solution.svg';
 import partner from '../assets/images/team/partner.svg';
 import qualityService from '../assets/images/team/quality-service.svg';
@@ -246,10 +245,10 @@ export const services = {
 		cta: 'Learn More',
 	},
 	'staffing-solutions': {
+		name: 'Staffing Solutions',
 		title: 'Your Partner in Staffing Solutions',
 		description:
 			'At Digiton Solutions, we are dedicated to providing our clients with the highest quality staffing solutions for IT Development and Management. Whether you need immediate temporary staffing or a more tailored long-term staffing strategy, we have the expertise and resources to help you find the ideal employee for your needs.',
-		image: serviceDetailsImage,
 		sections: [
 			{
 				heading: 'Temporary Hiring',
@@ -279,11 +278,11 @@ export const services = {
 		],
 	},
 	'cloud-service': {
+		name: 'Cloud Service',
 		title:
 			'Digital Transformation Made Easy With Digiton Solutions Cloud Services',
 		description:
 			'Welcome to Digiton Solutions and the powerful global cloud computing capabilities we provide. Our cloud services cover a range of specialized subject areas, including cloud management, infrastructure as a service, cloud migration, backup and disaster recovery, and storage management. We are confident in our ability to help you manage your data more efficiently through secure access and industry-leading technologies like artificial intelligence (AI) and natural language processing (NLP).',
-		image: serviceDetailsImage,
 
 		sections: [
 			{
@@ -314,10 +313,11 @@ export const services = {
 		],
 	},
 	'product-development': {
+		name: 'Product Development',
+
 		title: 'Unlocking the Potential of Your Innovations',
 		description:
 			'At Digiton Solutions, we are passionate about helping you create innovative products and services that meet the demands of your business. Our team specializes in product development, offering product consultation, co-innovation and ideation, iterative development, product transformation, deployment and sustenance for a unique and complete experience. With our cutting-edge strategies and technology solutions, you will unlock the potential of your innovations to produce superior results. Contact us today to get started!',
-		image: serviceDetailsImage,
 
 		sections: [
 			{
@@ -348,10 +348,11 @@ export const services = {
 		],
 	},
 	'it-managed-service': {
+		name: 'IT Managed Service',
+
 		title: 'Managed Services for Easy and Secure IT Technology',
 		description:
 			'At Digiton Solutions, we offer managed services to help you with all your technology needs. Our cutting-edge solutions provide the ultimate security and access to trusted technology, enabling businesses of all sizes to optimize their operations through integrated digital transformation. Our comprehensive suite of IT-managed services includes Cyber Security, Deep Tech, Data Analytics, Oracle HCM/ERP Cloud, Data Science, and DevOps. Leverage our expertise and knowledge to move your business forward today!',
-		image: serviceDetailsImage,
 
 		sections: [
 			{
@@ -377,10 +378,11 @@ export const services = {
 		],
 	},
 	'iam-service': {
+		name: 'IAM Service',
+
 		title: 'Securing Your Digital Identity with AI-Powered Access Management',
 		description:
 			'Digiton Solutions provides an AI-powered, comprehensive identity access management solution that gives you unparalleled control over who has access to your digital assets while also providing advanced security features like anomaly detection, automated workflows and MFA. Trust our AI-driven access insights to secure your business data today.',
-		image: serviceDetailsImage,
 
 		sections: [
 			{
@@ -491,4 +493,13 @@ export const team = {
 			image: partner,
 		},
 	],
+};
+
+export const contactInfo = {
+	address: ` Digiton Solutions Pvt Ltd
+	D.No.3-5-1089, 3rd Floor, Dr. GSR Bhavan, Narayanguda, Hyderabad, Telangana, India - 500 029.`,
+	timings: `Mon - Fri  11:00 to 20:00`,
+	phone: '+918688841917',
+	email: 'hr@digitonsolutions.in',
+	website: 'www.digitonsolutions.in',
 };

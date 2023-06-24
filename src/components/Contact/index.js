@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import { contactInfo } from '../../data/data';
 import BacktoTopCom from '../helpers/BackToTopCom';
 import Layouts from '../helpers/Layouts';
 
@@ -31,25 +33,29 @@ export default function Contact() {
 				{ name: 'home', path: '/' },
 				{ name: 'contact', path: '/contact' },
 			]}>
+			<Helmet>
+				<title>Contact us - Digiton Solutions</title>
+				<meta name='description' content='Contact us - Digiton Solutions' />
+			</Helmet>
 			<section className='contact-page py-120 rpy-100'>
 				<div className='container'>
 					<div className='contact-info-area mb-80'>
 						<div className='contact-info-item wow fadeInUp delay-0-2s'>
 							<i className='far fa-map'></i>
-							<p>27 Division St, New York, NY 10002,USA</p>
+							<p>{contactInfo.address}</p>
 						</div>
 						<div className='contact-info-item wow fadeInUp delay-0-4s'>
 							<i className='far fa-envelope'></i>
 							<p>
-								<a href='mailto:support@gmail.com'>support@gmail.com</a> <br />
-								<a href='#'>www.restly.net</a>
+								<a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+								<br />
+								<a href={contactInfo.website}>{contactInfo.website}</a>
 							</p>
 						</div>
 						<div className='contact-info-item wow fadeInUp delay-0-6s'>
 							<i className='fas fa-phone-alt'></i>
 							<p>
-								<a href='callto:+08(964)712365'>+08 (964) 712365</a> <br />
-								<a href='callto:+0234(456)9864'>+0234 (456) 9864</a>
+								<a href={`callto:${contactInfo.phone}`}>{contactInfo.phone}</a>
 							</p>
 						</div>
 					</div>
@@ -62,11 +68,7 @@ export default function Contact() {
 						<div className='col-lg-8'>
 							<div className='contact-form ml-40 rml-0 rmt-55 wow fadeInRight delay-0-2s'>
 								<h3 className='comment-title mb-35'>Send A Message</h3>
-								<p>
-									Avoids pleasure itself, because it is pleasure, but because
-									those who do not know how to pursue pleasure rationally
-									encounter
-								</p>
+
 								<form
 									id='comment-form'
 									className='comment-form mt-35'
@@ -137,7 +139,7 @@ export default function Contact() {
 				<div className='our-location'>
 					<iframe
 						title='map'
-						src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d136834.1519573059!2d-74.0154445224086!3d40.7260256534837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1639991650837!5m2!1sen!2sbd'
+						src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3807.310448245339!2d78.48666707924825!3d17.396882940926925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDIzJzQ4LjgiTiA3OMKwMjknMjkuNSJF!5e0!3m2!1sen!2sin!4v1687616909310!5m2!1sen!2sin'
 						height='650'
 						style={{ border: '0', width: '100%' }}
 						allowFullScreen=''

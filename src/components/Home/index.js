@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import BacktoTopCom from '../helpers/BackToTopCom';
 import Footer from '../partials/Footer';
 import Header from '../partials/Header';
@@ -14,6 +15,10 @@ export default function Home() {
 	}, []);
 	return (
 		<>
+			<Helmet>
+				<title>Digiton Solutions</title>
+				<meta name='description' content='Digiton Solutions' />
+			</Helmet>
 			<Header />
 			<Hero />
 			<WhatCanDo />

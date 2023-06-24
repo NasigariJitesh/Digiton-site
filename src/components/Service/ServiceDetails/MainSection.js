@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
 import { services } from '../../../data/data';
 
@@ -9,6 +10,13 @@ export default function MainSection() {
 
 	return (
 		<section className='service-details pt-120 rpt-100 pb-100 rpb-80'>
+			<Helmet>
+				<title>{details.name} - Digiton Solutions</title>
+				<meta
+					name='description'
+					content={`${details.name} - Digiton Solutions - ${details.title} - ${details.description}`}
+				/>
+			</Helmet>
 			<div className='container'>
 				<div className='row'>
 					<div className='col-lg-4'>

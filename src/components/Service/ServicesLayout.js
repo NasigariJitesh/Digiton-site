@@ -7,7 +7,6 @@ export default function ServicesLayout({ children, pageTitle, breadcrumbs }) {
 	return (
 		<Layouts pageTitle={pageTitle} breadcrumbs={breadcrumbs}>
 			{children && children}
-			{/* <WorkProgressSection /> */}
 			<GetInTouchSection />
 			<BacktoTopCom />
 		</Layouts>

@@ -1,9 +1,10 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { services } from '../../data/data';
+import { useNavigate, useParams } from 'react-router-dom';
+import { contactInfo, services } from '../../data/data';
 
 export default function GetInTouchSection() {
 	const navigate = useNavigate();
+	const { slug } = useParams();
 
 	const submitHandler = (e) => {
 		e.preventDefault();
@@ -84,7 +85,10 @@ export default function GetInTouchSection() {
 												<label htmlFor='service'>Service Required</label>
 												<select id='service' name='service'>
 													{services.home.services.map((service, index) => (
-														<option key={index} value={service.title}>
+														<option
+															key={index}
+															value={service.title}
+															selected={service.slug === slug}>
 															{service.title}
 														</option>
 													))}
@@ -121,7 +125,9 @@ export default function GetInTouchSection() {
 											<div className='content'>
 												<span>Call Us</span>
 												<h5>
-													<a href='callto:+012-345-6789'>+012-345-6789</a>
+													<a href={`callto:${contactInfo.phone}`}>
+														{contactInfo.phone}
+													</a>
 												</h5>
 											</div>
 										</li>
@@ -130,7 +136,9 @@ export default function GetInTouchSection() {
 											<div className='content'>
 												<span>Write to Us</span>
 												<h5>
-													<a href='mailto:info@example.com'>info@example.com</a>
+													<a href={`mailto:${contactInfo.email}`}>
+														{contactInfo.email}
+													</a>
 												</h5>
 											</div>
 										</li>
@@ -138,7 +146,7 @@ export default function GetInTouchSection() {
 											<i className='fas fa-clock'></i>
 											<div className='content'>
 												<span>Office hours</span>
-												<h5>Mon-Sat 9:00 - 7:00</h5>
+												<h5>{contactInfo.timings}</h5>
 											</div>
 										</li>
 									</ul>

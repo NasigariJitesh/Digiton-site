@@ -1,15 +1,20 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { team } from '../../data/data';
 
 export default function OurTeamSection() {
 	return (
 		<section className='team-section-three pb-50 rpb-30'>
+			<Helmet>
+				<title>Team - Digiton Solutions</title>
+				<meta name='description' content='Team - Digiton Solutions' />
+			</Helmet>
 			<div className='container'>
 				{team.sections.map((section, index) =>
 					window.innerWidth > 576 ? (
 						index % 2 === 0 ? (
-							<div className='row align-items-center py-40'>
+							<div key={index} className='row align-items-center py-40'>
 								<div className='col-md-8'>
 									<div className='about-six-content mr-65 rmr-0 wow fadeInLeft delay-0-2s'>
 										<div className='section-title mb-35'>
@@ -29,7 +34,7 @@ export default function OurTeamSection() {
 								</div>
 							</div>
 						) : (
-							<div className='row align-items-center py-40'>
+							<div key={index} className='row align-items-center py-40'>
 								<div className='col-md-4'>
 									<div className='about-shape mr-50 lmr-0 pr-30 wow fadeInLeft delay-0-2s'>
 										<img src={section.image} alt='Team' />
@@ -50,7 +55,7 @@ export default function OurTeamSection() {
 							</div>
 						)
 					) : (
-						<div className='row align-items-center py-40'>
+						<div key={index} className='row align-items-center py-40'>
 							<div className='col-md-4'>
 								<div className='about-shape mb-35 lmr-0 pr-30 wow fadeInLeft delay-0-2s'>
 									<img src={section.image} alt='Team' />

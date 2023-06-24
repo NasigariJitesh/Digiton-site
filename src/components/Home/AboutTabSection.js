@@ -21,8 +21,11 @@ export default function AboutTabSection() {
 					<div className='row'>
 						<div className='col-lg-3 col-sm-6'>
 							<div className='success-item wow fadeInUp delay-0-2s'>
-								<span className='count-text'>
-									<CounterUp endValue='520' sectionSelect='about-tab-section' />
+								<span
+									className='count-text plus'
+									data-speed='5000'
+									data-stop='50'>
+									<CounterUp endValue='50' sectionSelect='about-tab-section' />
 								</span>
 								<p>Projects Done</p>
 							</div>
@@ -32,8 +35,8 @@ export default function AboutTabSection() {
 								<span
 									className='count-text plus'
 									data-speed='5000'
-									data-stop='24'>
-									<CounterUp endValue={24} sectionSelect='about-tab-section' />
+									data-stop='10'>
+									<CounterUp endValue={10} sectionSelect='about-tab-section' />
 								</span>
 								<p>Awards Won</p>
 							</div>
@@ -43,8 +46,8 @@ export default function AboutTabSection() {
 								<span
 									className='count-text plus'
 									data-speed='5000'
-									data-stop='12'>
-									<CounterUp endValue={12} sectionSelect='about-tab-section' />
+									data-stop='10'>
+									<CounterUp endValue={10} sectionSelect='about-tab-section' />
 								</span>
 								<p>Years Experience</p>
 							</div>
@@ -54,8 +57,8 @@ export default function AboutTabSection() {
 								<span
 									className='count-text plus'
 									data-speed='5000'
-									data-stop='352'>
-									<CounterUp endValue={352} sectionSelect='about-tab-section' />
+									data-stop='50'>
+									<CounterUp endValue={50} sectionSelect='about-tab-section' />
 								</span>
 								<p>Happy Clients</p>
 							</div>

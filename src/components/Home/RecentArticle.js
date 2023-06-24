@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { home } from '../../data/data';
+import { truncate } from '../../data/functions';
 import BLOGS from '../../posts.json';
 
 export default function RecentArticle() {
@@ -86,18 +87,14 @@ export default function RecentArticle() {
 											<a href={`/blog/${BLOGS[1].slug}`}>{BLOGS[1].title}</a>
 										</h4>
 										<p>
-											{BLOGS[1].content.length > 120 ? (
-												<>
-													<ReactMarkdown>
-														{`${BLOGS[1].content.slice(0, 120)}...`}
-													</ReactMarkdown>
-													<a href={`/blog/${BLOGS[1].slug}`}>
-														{home.recentArticle.readMore}
-													</a>
-												</>
-											) : (
-												<ReactMarkdown>{BLOGS[1].content}</ReactMarkdown>
-											)}
+											<ReactMarkdown>
+												{truncate(BLOGS[1].content, 120)}
+											</ReactMarkdown>
+											{BLOGS[2].content.length > 120 ? (
+												<a href={`/blog/${BLOGS[1].slug}`}>
+													{home.recentArticle.readMore}
+												</a>
+											) : null}
 										</p>
 									</div>
 								</div>
@@ -117,18 +114,14 @@ export default function RecentArticle() {
 											<a href={`/blog/${BLOGS[2].slug}`}>{BLOGS[2].title}</a>
 										</h4>
 										<p>
+											<ReactMarkdown>
+												{truncate(BLOGS[2].content, 120)}
+											</ReactMarkdown>
 											{BLOGS[2].content.length > 120 ? (
-												<>
-													<ReactMarkdown>
-														{`${BLOGS[2].content.slice(0, 120)}...`}
-													</ReactMarkdown>
-													<a href={`/blog/${BLOGS[2].slug}`}>
-														{home.recentArticle.readMore}
-													</a>
-												</>
-											) : (
-												<ReactMarkdown>{BLOGS[2].content}</ReactMarkdown>
-											)}
+												<a href={`/blog/${BLOGS[2].slug}`}>
+													{home.recentArticle.readMore}
+												</a>
+											) : null}
 										</p>
 									</div>
 								</div>

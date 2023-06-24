@@ -1,7 +1,8 @@
 import React from 'react';
 import background from '../../../assets/images/footer/footer-bg.png';
-import { footer } from '../../../data/data';
+import { contactInfo, footer } from '../../../data/data';
 
+import { truncate } from '../../../data/functions';
 import BLOGS from '../../../posts.json';
 
 export default function FooterHomeFour() {
@@ -42,7 +43,7 @@ export default function FooterHomeFour() {
 								</a>
 							</div>
 							<div className='text'>{footer.description}</div>
-							<div className='social-style-b mt-30'>
+							{/* <div className='social-style-b mt-30'>
 								<a href='http://facebook.com'>
 									<i className='fab fa-facebook-f'></i>
 								</a>
@@ -55,7 +56,7 @@ export default function FooterHomeFour() {
 								<a href='https://www.pinterest.com/'>
 									<i className='fab fa-pinterest-p'></i>
 								</a>
-							</div>
+							</div> */}
 						</div>
 					</div>
 					<div className='col-lg-3 col-sm-6'>
@@ -80,19 +81,23 @@ export default function FooterHomeFour() {
 							<h4 className='footer-title'>Contacts</h4>
 							<ul className='list-style-b'>
 								<li>
-									<i className='fas fa-map-marker-alt'></i> 1791 Yorkshire
-									Circle Kitty Hawk, NC 27949
+									<i className='fas fa-map-marker-alt'></i>
+									{contactInfo.address}
 								</li>
 								<li>
-									<i className='fas fa-clock'></i> Mon-Sat 9:00 - 7:00
+									<i className='fas fa-clock'></i> {contactInfo.timings}
 								</li>
 								<li>
 									<i className='fas fa-phone-alt'></i>
-									<a href='callto:+012-345-6789'>+012-345-6789</a>
+									<a href={`callto:${contactInfo.phone}`}>
+										{contactInfo.phone}
+									</a>
 								</li>
 								<li>
 									<i className='fas fa-envelope'></i>
-									<a href='mailto:info@example.com'>info@example.com</a>
+									<a href={`mailto:${contactInfo.email}`}>
+										{contactInfo.email}
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -107,14 +112,12 @@ export default function FooterHomeFour() {
 										<div className='widget-news-content'>
 											<h6>
 												<a href={`/blog/${blog.slug}`}>
-													{blog.title.length > 15
-														? `${blog.title.slice(0, 15)}...`
-														: blog.title}
+													{truncate(blog.title, 15)}
 												</a>
 											</h6>
 											<span className='date'>
 												<i className='far fa-calendar-alt'></i>
-												<a href='/blog/blog-details'>{blog.date}</a>
+												<a href={`/blog/${blog.slug}`}>{blog.date}</a>
 											</span>
 										</div>
 									</div>
