@@ -53,7 +53,6 @@ export default function Contact() {
 									id='comment-form'
 									className='comment-form mt-35'
 									name='contact-form'
-									action='#'
 									method='post'>
 									<input
 										type='hidden'
