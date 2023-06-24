@@ -55,7 +55,8 @@ export default function Contact() {
 									name='contact-form'
 									action='#'
 									method='post'
-									data-netlify='true'>
+									// eslint-disable-next-line react/no-unknown-property
+									netlify>
 									<div className='row clearfix justify-content-center'>
 										<div className='col-sm-6'>
 											<div className='form-group'>

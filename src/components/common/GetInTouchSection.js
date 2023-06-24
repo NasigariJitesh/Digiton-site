@@ -17,7 +17,8 @@ export default function GetInTouchSection() {
 									name='get-in-touch-form'
 									action='#'
 									method='post'
-									data-netlify='true'>
+									// eslint-disable-next-line react/no-unknown-property
+									netlify>
 									<div className='row'>
 										<div className='col-sm-6'>
 											<div className='form-group'>
