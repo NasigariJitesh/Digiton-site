@@ -55,11 +55,7 @@ export default function Contact() {
 									className='comment-form mt-35'
 									name='contact-form'
 									method='post'>
-									<input
-										type='hidden'
-										name='contact-form'
-										value='contact-form'
-									/>
+									<input type='hidden' name='form-name' value='contact-form' />
 									<div className='row clearfix justify-content-center'>
 										<div className='col-sm-6'>
 											<div className='form-group'>
