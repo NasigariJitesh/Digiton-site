@@ -1,7 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { services } from '../../data/data';
 
 export default function GetInTouchSection() {
+	const navigate = useNavigate();
+
+	const submitHandler = (e) => {
+		e.preventDefault();
+		const myForm = document.getElementById('contact-form');
+		const formData = new FormData(myForm);
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(formData).toString(),
+		})
+			.then(() => navigate('/follow-up'))
+			.catch((error) => alert(error));
+	};
 	return (
 		<section className='contact-four py-120 rpy-100'>
 			<div className='container'>

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import BacktoTopCom from '../helpers/BackToTopCom';
 import Layouts from '../helpers/Layouts';
 
@@ -6,6 +7,21 @@ export default function Contact() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	const navigate = useNavigate();
+
+	const submitHandler = (e) => {
+		e.preventDefault();
+		const myForm = document.getElementById('contact-form');
+		const formData = new FormData(myForm);
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(formData).toString(),
+		})
+			.then(() => navigate('/success'))
+			.catch((error) => alert(error));
+	};
 
 	return (
 		<Layouts
@@ -54,7 +70,7 @@ export default function Contact() {
 									id='comment-form'
 									className='comment-form mt-35'
 									name='contact-form'
-									action='/success'
+									onSubmit={submitHandler}
 									method='post'>
 									<input type='hidden' name='form-name' value='contact-form' />
 									<div className='row clearfix justify-content-center'>
