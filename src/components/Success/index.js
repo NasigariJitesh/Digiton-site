@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import successImage from '../../assets/images/success.svg';
 
-export default function FourZeroFour() {
+export default function Success() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);

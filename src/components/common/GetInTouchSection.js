@@ -16,6 +16,7 @@ export default function GetInTouchSection() {
 									id='contact-form'
 									className='contact-form'
 									name='get-in-touch-form'
+									action=''
 									method='post'>
 									<input
 										type='hidden'

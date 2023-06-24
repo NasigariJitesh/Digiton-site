@@ -54,6 +54,7 @@ export default function Contact() {
 									id='comment-form'
 									className='comment-form mt-35'
 									name='contact-form'
+									action='/success'
 									method='post'>
 									<input type='hidden' name='form-name' value='contact-form' />
 									<div className='row clearfix justify-content-center'>
