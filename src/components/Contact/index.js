@@ -52,9 +52,10 @@ export default function Contact() {
 								<form
 									id='comment-form'
 									className='comment-form mt-35'
-									name='comment-form'
+									name='contact-form'
 									action='#'
-									method='post'>
+									method='post'
+									data-netlify='true'>
 									<div className='row clearfix justify-content-center'>
 										<div className='col-sm-6'>
 											<div className='form-group'>

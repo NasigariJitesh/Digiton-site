@@ -14,9 +14,10 @@ export default function GetInTouchSection() {
 								<form
 									id='contact-form'
 									className='contact-form'
-									name='contact-form'
+									name='get-in-touch-form'
 									action='#'
-									method='post'>
+									method='post'
+									data-netlify='true'>
 									<div className='row'>
 										<div className='col-sm-6'>
 											<div className='form-group'>
