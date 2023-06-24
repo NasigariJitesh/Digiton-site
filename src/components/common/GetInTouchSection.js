@@ -19,7 +19,7 @@ export default function GetInTouchSection() {
 									method='post'>
 									<input
 										type='hidden'
-										name='get-in-touch'
+										name='get-in-touch-form'
 										value='get-in-touch-form'
 									/>
 									<div className='row'>
