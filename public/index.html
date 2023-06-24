@@ -32,10 +32,17 @@
 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	</head>
 	<body>
-		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-			<input type="text" name="name" />
-			<input type="email" name="email" />
-			<textarea name="message"></textarea>
+		<form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
+			<input type="text" id="full-name" name="full-name" />
+			<input type="email" id="email" name="email" />
+			<textarea name="message" id="comments" rows="4"></textarea>
+		</form>
+		<form name="get-in-touch-form" netlify netlify-honeypot="bot-field" hidden>
+			<input type="text" id="name" name="name" />
+			<input type="email" id="email" name="email" />
+			<input type="text" id="number" name="number" />
+			<select id="service" name="service"></select>
+			<textarea name="message" id="comments" rows="4"></textarea>
 		</form>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>

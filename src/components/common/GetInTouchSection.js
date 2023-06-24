@@ -1,4 +1,5 @@
 import React from 'react';
+import { services } from '../../data/data';
 
 export default function GetInTouchSection() {
 	return (
@@ -31,7 +32,7 @@ export default function GetInTouchSection() {
 													name='name'
 													className='form-control'
 													placeholder='Name'
-													required=''
+													required
 												/>
 											</div>
 										</div>
@@ -44,7 +45,7 @@ export default function GetInTouchSection() {
 													name='email'
 													className='form-control'
 													placeholder='Email'
-													required=''
+													required
 												/>
 											</div>
 										</div>
@@ -57,7 +58,7 @@ export default function GetInTouchSection() {
 													name='number'
 													className='form-control'
 													placeholder='Phone Number'
-													required=''
+													required
 												/>
 											</div>
 										</div>
@@ -65,19 +66,18 @@ export default function GetInTouchSection() {
 											<div className='form-group'>
 												<label htmlFor='service'>Service Required</label>
 												<select id='service' name='service'>
-													<option value='' selected=''>
-														Service
-													</option>
-													<option value=''>About</option>
-													<option value=''>Contact</option>
-													<option value=''>Team</option>
+													{services.home.services.map((service, index) => (
+														<option key={index} value={service.title}>
+															{service.title}
+														</option>
+													))}
 												</select>
 											</div>
 										</div>
 										<div className='col-sm-12'>
 											<div className='form-group'>
 												<textarea
-													name='comments'
+													name='message'
 													id='comments'
 													className='form-control'
 													rows='4'

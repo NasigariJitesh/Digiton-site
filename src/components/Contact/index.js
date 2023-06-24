@@ -67,9 +67,8 @@ export default function Contact() {
 													id='full-name'
 													name='full-name'
 													className='form-control'
-													value=''
 													placeholder='Your Full Name'
-													required=''
+													required
 												/>
 											</div>
 										</div>
@@ -83,9 +82,8 @@ export default function Contact() {
 													id='email'
 													name='email'
 													className='form-control'
-													value=''
 													placeholder='Your Email'
-													required=''
+													required
 												/>
 											</div>
 										</div>
@@ -95,12 +93,12 @@ export default function Contact() {
 													<i className='fas fa-pencil-alt'></i>
 												</label>
 												<textarea
-													name='comments'
+													name='message'
 													id='comments'
 													className='form-control'
 													rows='4'
 													placeholder='Write Message'
-													required=''></textarea>
+													required></textarea>
 											</div>
 										</div>
 										<div className='col-sm-12'>
