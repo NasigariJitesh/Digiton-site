@@ -54,9 +54,12 @@ export default function Contact() {
 									className='comment-form mt-35'
 									name='contact-form'
 									action='#'
-									method='post'
-									// eslint-disable-next-line react/no-unknown-property
-									netlify>
+									method='post'>
+									<input
+										type='hidden'
+										name='contact-form'
+										value='contact-form'
+									/>
 									<div className='row clearfix justify-content-center'>
 										<div className='col-sm-6'>
 											<div className='form-group'>

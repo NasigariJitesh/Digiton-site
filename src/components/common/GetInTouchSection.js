@@ -16,9 +16,12 @@ export default function GetInTouchSection() {
 									className='contact-form'
 									name='get-in-touch-form'
 									action='#'
-									method='post'
-									// eslint-disable-next-line react/no-unknown-property
-									netlify>
+									method='post'>
+									<input
+										type='hidden'
+										name='get-in-touch-form'
+										value='get-in-touch-form'
+									/>
 									<div className='row'>
 										<div className='col-sm-6'>
 											<div className='form-group'>
