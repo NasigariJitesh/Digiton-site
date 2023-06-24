@@ -12,7 +12,7 @@ export default function Contact() {
 
 	const submitHandler = (e) => {
 		e.preventDefault();
-		const myForm = document.getElementById('contact-form');
+		const myForm = document.getElementById('comment-form');
 		const formData = new FormData(myForm);
 		fetch('/', {
 			method: 'POST',
