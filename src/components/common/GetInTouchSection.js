@@ -1,20 +1,6 @@
 import React from 'react';
 
 export default function GetInTouchSection() {
-	const handleSubmit = (event) => {
-		event.preventDefault();
-
-		const myForm = event.target;
-		const formData = new FormData(myForm);
-
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams(formData).toString(),
-		})
-			.then(() => {})
-			.catch((error) => console.error(error));
-	};
 	return (
 		<section className='contact-four py-120 rpy-100'>
 			<div className='container'>
@@ -29,8 +15,6 @@ export default function GetInTouchSection() {
 									id='contact-form'
 									className='contact-form'
 									name='get-in-touch-form'
-									data-netlify='true'
-									onSubmit={handleSubmit}
 									method='post'>
 									<input
 										type='hidden'

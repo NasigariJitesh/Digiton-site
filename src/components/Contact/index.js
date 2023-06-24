@@ -7,20 +7,6 @@ export default function Contact() {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const handleSubmit = (event) => {
-		event.preventDefault();
-
-		const myForm = event.target;
-		const formData = new FormData(myForm);
-
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams(formData).toString(),
-		})
-			.then(() => {})
-			.catch((error) => console.error(error));
-	};
 	return (
 		<Layouts
 			pageTitle='Contact us'
@@ -68,8 +54,6 @@ export default function Contact() {
 									id='comment-form'
 									className='comment-form mt-35'
 									name='contact-form'
-									data-netlify='true'
-									onSubmit={handleSubmit}
 									method='post'>
 									<input type='hidden' name='contact' value='contact-form' />
 									<div className='row clearfix justify-content-center'>
