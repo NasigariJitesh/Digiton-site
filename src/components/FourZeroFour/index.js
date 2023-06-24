@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import successImage from '../../assets/images/success.svg';
+import errorImg from '../../assets/images/404.png';
 
 export default function FourZeroFour() {
 	useEffect(() => {
@@ -11,8 +11,8 @@ export default function FourZeroFour() {
 		<section className='error-page text-center py-120 rpy-100'>
 			<div className='container'>
 				<div className='error-content'>
-					<img src={successImage} alt='success' />
-					<h2>Thankyou! We received your Submission</h2>
+					<img src={errorImg} alt='404 Error' />
+					<h2>Oops! 404 page not found.</h2>
 					<a
 						href='#'
 						onClick={(e) => {
@@ -20,7 +20,7 @@ export default function FourZeroFour() {
 							navigate(-1);
 						}}
 						className='theme-btn mt-30'>
-						Go back
+						go back
 					</a>
 				</div>
 			</div>
