@@ -15,6 +15,7 @@ export default function GetInTouchSection() {
 			body: new URLSearchParams(formData).toString(),
 		})
 			.then(() => navigate('/success'))
+			// eslint-disable-next-line no-alert
 			.catch((error) => alert(error));
 	};
 	return (

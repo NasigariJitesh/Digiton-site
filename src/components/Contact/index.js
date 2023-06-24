@@ -20,6 +20,7 @@ export default function Contact() {
 			body: new URLSearchParams(formData).toString(),
 		})
 			.then(() => navigate('/success'))
+			// eslint-disable-next-line no-alert
 			.catch((error) => alert(error));
 	};
 
