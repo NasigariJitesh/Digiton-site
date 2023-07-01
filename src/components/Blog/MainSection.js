@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import ReactMarkdown from 'react-markdown';
+import { blogImages } from '../../data/data';
 import BLOGS from '../../posts.json';
 
 export default function MainSection() {
@@ -24,7 +25,10 @@ export default function MainSection() {
 									key={blog.id}
 									className='blog-standard-item wow fadeInUp delay-0-2s'>
 									<div className='image'>
-										<img src={blog.thumbnail} alt='Blog Standard' />
+										<img
+											src={blogImages(`.${blog.thumbnail}`)}
+											alt='Blog Standard'
+										/>
 									</div>
 									<div className='blog-header'>
 										<ul className='post-meta-item mr-15'>

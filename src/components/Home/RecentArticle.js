@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-import { home } from '../../data/data';
+import { blogImages, home } from '../../data/data';
 import { truncate } from '../../data/functions';
 import BLOGS from '../../posts.json';
 
@@ -33,7 +33,10 @@ export default function RecentArticle() {
 						<div className='d-flex justify-content-between flex-column flex-grow-1 news-item wow fadeInUp delay-0-4s'>
 							<div className='d-flex flex-column flex-grow-1'>
 								<div className='image'>
-									<img src={BLOGS[0].thumbnail} alt='recent-article-1' />
+									<img
+										src={blogImages(`.${BLOGS[0].thumbnail}`)}
+										alt='recent-article-1'
+									/>
 								</div>
 								<div className='flex-grow-1 news-content'>
 									<ul className='post-meta-item'>
@@ -72,60 +75,64 @@ export default function RecentArticle() {
 					</div>
 					<div className='col-xl-4'>
 						<div className='row'>
-							<div className='col-xl-12 col-sm-6'>
-								<div className='news-item style-a wow fadeInUp delay-0-6s'>
-									<div className='news-content'>
-										<ul className='post-meta-item'>
-											<li>
-												<i className='fas fa-calendar-alt'></i>
-												<a href='#' rel='bookmark'>
-													{BLOGS[1].date}
-												</a>
-											</li>
-										</ul>
-										<h4>
-											<a href={`/blog/${BLOGS[1].slug}`}>{BLOGS[1].title}</a>
-										</h4>
-										<p>
-											<ReactMarkdown>
-												{truncate(BLOGS[1].content, 120)}
-											</ReactMarkdown>
-											{BLOGS[2].content.length > 120 ? (
-												<a href={`/blog/${BLOGS[1].slug}`}>
-													{home.recentArticle.readMore}
-												</a>
-											) : null}
-										</p>
+							{BLOGS[1] ? (
+								<div className='col-xl-12 col-sm-6'>
+									<div className='news-item style-a wow fadeInUp delay-0-6s'>
+										<div className='news-content'>
+											<ul className='post-meta-item'>
+												<li>
+													<i className='fas fa-calendar-alt'></i>
+													<a href='#' rel='bookmark'>
+														{BLOGS[1].date}
+													</a>
+												</li>
+											</ul>
+											<h4>
+												<a href={`/blog/${BLOGS[1].slug}`}>{BLOGS[1].title}</a>
+											</h4>
+											<p>
+												<ReactMarkdown>
+													{truncate(BLOGS[1].content, 120)}
+												</ReactMarkdown>
+												{BLOGS[2].content.length > 120 ? (
+													<a href={`/blog/${BLOGS[1].slug}`}>
+														{home.recentArticle.readMore}
+													</a>
+												) : null}
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div className='col-xl-12 col-sm-6'>
-								<div className='news-item style-a wow fadeInUp delay-0-7s'>
-									<div className='news-content'>
-										<ul className='post-meta-item'>
-											<li>
-												<i className='fas fa-calendar-alt'></i>
-												<a href='#' rel='bookmark'>
-													{BLOGS[2].date}
-												</a>
-											</li>
-										</ul>
-										<h4>
-											<a href={`/blog/${BLOGS[2].slug}`}>{BLOGS[2].title}</a>
-										</h4>
-										<p>
-											<ReactMarkdown>
-												{truncate(BLOGS[2].content, 120)}
-											</ReactMarkdown>
-											{BLOGS[2].content.length > 120 ? (
-												<a href={`/blog/${BLOGS[2].slug}`}>
-													{home.recentArticle.readMore}
-												</a>
-											) : null}
-										</p>
+							) : null}
+							{BLOGS[2] ? (
+								<div className='col-xl-12 col-sm-6'>
+									<div className='news-item style-a wow fadeInUp delay-0-7s'>
+										<div className='news-content'>
+											<ul className='post-meta-item'>
+												<li>
+													<i className='fas fa-calendar-alt'></i>
+													<a href='#' rel='bookmark'>
+														{BLOGS[2].date}
+													</a>
+												</li>
+											</ul>
+											<h4>
+												<a href={`/blog/${BLOGS[2].slug}`}>{BLOGS[2].title}</a>
+											</h4>
+											<p>
+												<ReactMarkdown>
+													{truncate(BLOGS[2].content, 120)}
+												</ReactMarkdown>
+												{BLOGS[2].content.length > 120 ? (
+													<a href={`/blog/${BLOGS[2].slug}`}>
+														{home.recentArticle.readMore}
+													</a>
+												) : null}
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							) : null}
 						</div>
 					</div>
 				</div>

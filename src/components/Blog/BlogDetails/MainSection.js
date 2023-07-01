@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useParams } from 'react-router-dom';
+import { blogImages } from '../../../data/data';
 import { truncate } from '../../../data/functions';
 import BLOGS from '../../../posts.json';
 
@@ -26,7 +27,10 @@ export default function MainSection() {
 					<div className='col-lg-8'>
 						<div className='blog-details-content pt-120 rpt-100 pb-95 rpb-75 pr-15 rpr-0'>
 							<div className='image wow fadeInUp delay-0-2s'>
-								<img src={blog.thumbnail} alt='Blog Standard' />
+								<img
+									src={blogImages(`.${blog.thumbnail}`)}
+									alt='Blog Standard'
+								/>
 							</div>
 							<div className='blog-header'>
 								<ul className='post-meta-item mr-15'>

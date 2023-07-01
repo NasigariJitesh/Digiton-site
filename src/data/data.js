@@ -503,3 +503,5 @@ export const contactInfo = {
 	email: 'hr@digitonsolutions.in',
 	website: 'www.digitonsolutions.in',
 };
+
+export const blogImages = require.context('../assets/images/blogPosts', true);
